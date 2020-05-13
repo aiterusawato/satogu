@@ -1,9 +1,7 @@
-acnh_list_title: Animal Crossing New Horizons
+acnh-title: Animal Crossing New Horizons
+acnh-url: index.html
 
 acnh:
-
-- title: Home
-  url: index.html
 
 - title: Simple Flower Guide
   url: flowers-simple.html

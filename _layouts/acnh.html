@@ -3,8 +3,7 @@ layout: default
 ---
 <article class="post">
 
-
-  <h2>{{ site.data.nav.acnh_list_title }}</h2>
+  <h2><a href="{{ site.data.nav.acnh-url }}">{{ site.data.nav.acnh-title }}</a></h2>
     <ul>
        {% for item in site.data.nav.acnh %}
           <li><a href="{{ item.url }}">{{ item.title }}</a></li>
