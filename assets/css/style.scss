@@ -1,0 +1,69 @@
+---
+---
+
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
+
+img {
+	width:32px;
+	height:32px;
+}
+
+h1 img, h2 img {
+	width:64px;
+	height:64px;
+}
+
+h3 img {
+	width:48px;
+	height:48px;
+
+}
+table {
+	/*max-width: 100%;*/
+	/*table-layout:fixed;*/
+}
+
+
+th, td {
+	/*font-size: 0.7em;*/
+}
+
+table img {
+	width:32px;
+	height:32px;
+}
+
+.repalg {
+	width: auto;
+	height: auto;
+}
+
+.layout  {
+	border: 2px solid black;
+	width: auto;
+	height: auto;
+}
+
+.table-wrapper {
+  overflow-x: scroll;
+}
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
+
+
+// Using numbers instead of bullets for listing
+#markdown-toc ul {
+    list-style: decimal;
+}
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    list-style: decimal;
+    display: inline-block;
+}

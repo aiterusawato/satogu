@@ -1,0 +1,12 @@
+acnh_list_title: Animal Crossing New Horizons
+
+acnh:
+
+- title: Home
+  url: index.html
+
+- title: Simple Flower Guide
+  url: hybrids.html
+
+- title: Advanced Flower Guide
+  url: flowers.html
