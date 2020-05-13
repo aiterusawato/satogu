@@ -62,8 +62,21 @@ table img {
 }
 
 #markdown-toc {
+	margin: auto;
     border: 1px solid #aaa;
-    padding: 1.5em;
+    padding-left: 2em;
     list-style: decimal;
-    display: inline-block;
+    display: block;
+}
+
+table {
+	display: inline-block;
+	overflow-x: auto;
+}
+
+
+table td {
+	width: 10%;
+	min-width: 10%;
+	max-width: 10%;
 }
