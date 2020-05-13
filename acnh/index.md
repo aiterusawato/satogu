@@ -4,6 +4,6 @@ title: Animal Crossing New Horizons
 layout: acnh
 ---
 
-Use the menu links to navigate through the pages.
+The new website is here, please update your links to [https://aiterusawato.github.io/satogu/acnh/](https://aiterusawato.github.io/satogu/acnh/) !
 
 Website under construction.

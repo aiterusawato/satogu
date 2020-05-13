@@ -33,8 +33,6 @@ layout: acnh
 |  2   |  2   |  1   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW]  | ![GM][GM] |
 |  2   |  2   |  2   |    ![UR][UR]     |    ![RR][RR]     |    ![WR][WR]     | ![LT][LT] | ![LP][LP] | ![RC][RC] | ![WL][WL] | ![LH][LH] | ![LW][LW]  | ![RM][RM] |
 
-Colored background = Seed / Wild Genotype
-
 [WR]: img/icon/RW.png "White Rose"
 [RR]: img/icon/RR.png "Red Rose"
 [YR]: img/icon/RY.png "Yellow Rose"
