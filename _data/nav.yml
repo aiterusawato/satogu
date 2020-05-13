@@ -6,7 +6,10 @@ acnh:
   url: index.html
 
 - title: Simple Flower Guide
-  url: hybrids.html
+  url: flowers-simple.html
 
 - title: Advanced Flower Guide
-  url: flowers.html
+  url: flowers-advanced.html
+
+- title: Flower Genotypes
+  url: flowers-genotypes.html
