@@ -66,4 +66,4 @@ No.
 > ###### Can regular watering cans or rain create gold roses ?
 >
 
-No. If you get a gold rose after watering with a regular can or rain, it's because your black rose already had the gold flag. Rain only triggered the roll for reproduction, like any water does. Any water is water.
+No. If you get a gold rose after watering with a regular can or rain, it's because the black rose which produced it already had the gold flag. The black rose has been watered by a gold watering can previously, either by you or someone else. The regular water from regular watering can or rain only triggered the roll for reproduction.
