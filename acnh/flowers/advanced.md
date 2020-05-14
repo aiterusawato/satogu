@@ -259,7 +259,7 @@ When flowers reproduce, they can either breed or duplicate depending on their su
    If unsuccessful, replicate and produce the duplicate C on T.
 5. Either way, reset the water counter of all involved flowers and mark them ineligible for the rest of the algorithm.
 
-<img class="repalg" src="img/repalg.png">
+<img class="repalg" src="../img/repalg.png">
 
 <center>Reproduction Algorithm from <a href="https://gardenscience.ac/">Aeon</a></center>
 
@@ -524,81 +524,81 @@ Every day, weeds have a chance to spread depending on their current growth stage
 
 
 
-[WR]: img/icon/RW.png "White Rose"
-[RR]: img/icon/RR.png "Red Rose"
-[YR]: img/icon/RY.png "Yellow Rose"
-[PR]: img/icon/RP.png "Pink Rose"
-[OR]: img/icon/RO.png "Orange Rose"
-[LR]: img/icon/RU.png "Purple Rose"
-[BR]: img/icon/RK.png "Black Rose"
-[UR]: img/icon/RB.png "Blue Rose"
-[RG]: img/icon/RG.png "Gold Rose"
-[WT]: img/icon/TW.png "White Tulip"
-[RT]: img/icon/TR.png "Red Tulip"
-[YT]: img/icon/TY.png "Yellow Tulip"
-[PT]: img/icon/TP.png "Pink Tulip"
-[OT]: img/icon/TO.png "Orange Tulip"
-[LT]: img/icon/TU.png "Purple Tulip"
-[BT]: img/icon/TK.png "Black Tulip"
+[WR]: ../img/icon/RW.png "White Rose"
+[RR]: ../img/icon/RR.png "Red Rose"
+[YR]: ../img/icon/RY.png "Yellow Rose"
+[PR]: ../img/icon/RP.png "Pink Rose"
+[OR]: ../img/icon/RO.png "Orange Rose"
+[LR]: ../img/icon/RU.png "Purple Rose"
+[BR]: ../img/icon/RK.png "Black Rose"
+[UR]: ../img/icon/RB.png "Blue Rose"
+[RG]: ../img/icon/RG.png "Gold Rose"
+[WT]: ../img/icon/TW.png "White Tulip"
+[RT]: ../img/icon/TR.png "Red Tulip"
+[YT]: ../img/icon/TY.png "Yellow Tulip"
+[PT]: ../img/icon/TP.png "Pink Tulip"
+[OT]: ../img/icon/TO.png "Orange Tulip"
+[LT]: ../img/icon/TU.png "Purple Tulip"
+[BT]: ../img/icon/TK.png "Black Tulip"
 
-[WP]: img/icon/PW.png "White Pansy"
-[RP]: img/icon/PR.png "Red Pansy"
-[YP]: img/icon/PY.png "Yellow Pansy"
-[OP]: img/icon/PO.png "Orange Pansy"
-[LP]: img/icon/PU.png "Purple Pansy"
-[UP]: img/icon/PB.png "Blue Pansy"
+[WP]: ../img/icon/PW.png "White Pansy"
+[RP]: ../img/icon/PR.png "Red Pansy"
+[YP]: ../img/icon/PY.png "Yellow Pansy"
+[OP]: ../img/icon/PO.png "Orange Pansy"
+[LP]: ../img/icon/PU.png "Purple Pansy"
+[UP]: ../img/icon/PB.png "Blue Pansy"
 
-[RC]: img/icon/CR.png "Red Cosmos"
-[WC]: img/icon/CW.png "White Cosmos"
-[YC]: img/icon/CY.png "Yellow Cosmos"
-[BC]: img/icon/CK.png "Black Cosmos"
-[OC]: img/icon/CO.png "Orange Cosmos"
-[PC]: img/icon/CP.png "Pink Cosmos"
+[RC]: ../img/icon/CR.png "Red Cosmos"
+[WC]: ../img/icon/CW.png "White Cosmos"
+[YC]: ../img/icon/CY.png "Yellow Cosmos"
+[BC]: ../img/icon/CK.png "Black Cosmos"
+[OC]: ../img/icon/CO.png "Orange Cosmos"
+[PC]: ../img/icon/CP.png "Pink Cosmos"
 
-[WL]: img/icon/LW.png "White Lily"
-[RL]: img/icon/LR.png "Red Lily"
-[YL]: img/icon/LY.png "Yellow Lily"
-[PL]: img/icon/LP.png "Pink Lily"
-[OL]: img/icon/LO.png "Orange Lily"
-[BL]: img/icon/LK.png "Black Lily"
+[WL]: ../img/icon/LW.png "White Lily"
+[RL]: ../img/icon/LR.png "Red Lily"
+[YL]: ../img/icon/LY.png "Yellow Lily"
+[PL]: ../img/icon/LP.png "Pink Lily"
+[OL]: ../img/icon/LO.png "Orange Lily"
+[BL]: ../img/icon/LK.png "Black Lily"
 
-[RH]: img/icon/HR.png "Red Hyacinth"
-[WH]: img/icon/HW.png "White Hyacinth"
-[YH]: img/icon/HY.png "Yellow Hyacinth"
-[LH]: img/icon/HU.png "Purple Hyacinth"
-[OH]: img/icon/HO.png "Orange Hyacinth"
-[PH]: img/icon/HP.png "Pink Hyacinth"
-[UH]: img/icon/HB.png "Blue Hyacinth"
+[RH]: ../img/icon/HR.png "Red Hyacinth"
+[WH]: ../img/icon/HW.png "White Hyacinth"
+[YH]: ../img/icon/HY.png "Yellow Hyacinth"
+[LH]: ../img/icon/HU.png "Purple Hyacinth"
+[OH]: ../img/icon/HO.png "Orange Hyacinth"
+[PH]: ../img/icon/HP.png "Pink Hyacinth"
+[UH]: ../img/icon/HB.png "Blue Hyacinth"
 
-[RW]: img/icon/WR.png "Red Windflower"
-[WW]: img/icon/WW.png "White Windflower"
-[UW]: img/icon/WB.png "Blue Windflower"
-[LW]: img/icon/WU.png "Purple Windflower"
-[PW]: img/icon/WP.png "Pink Windflower"
-[OW]: img/icon/WO.png "Orange Windflower"
+[RW]: ../img/icon/WR.png "Red Windflower"
+[WW]: ../img/icon/WW.png "White Windflower"
+[UW]: ../img/icon/WB.png "Blue Windflower"
+[LW]: ../img/icon/WU.png "Purple Windflower"
+[PW]: ../img/icon/WP.png "Pink Windflower"
+[OW]: ../img/icon/WO.png "Orange Windflower"
 
-[RM]: img/icon/MR.png "Red Mum"
-[WM]: img/icon/MW.png "White Mum"
-[YM]: img/icon/MY.png "Yellow Mum"
-[LM]: img/icon/MU.png "Purple Mum"
-[PM]: img/icon/MP.png "Pink Mum"
-[GM]: img/icon/MG.png "Green Mum"
-[LOTV]: img/icon/LOTV.png "Lily of the Valley"
-[Warning]: img/icon/Pitfall.png
-[Can]: img/icon/Can.png
-[Gold Can]: img/icon/CanGold.png
-[Book]: img/icon/Book.png
-[News]: img/icon/Post.png
-[Gift]: img/icon/Present.png
-[Shovel]: img/icon/Shovel.png
-[Time]: img/icon/Timer.png
-[Memo]: img/icon/LostMemo.png
-[Visitor]: img/icon/ExpGreeting.png
-[Cursor]: img/icon/HandRight.png
+[RM]: ../img/icon/MR.png "Red Mum"
+[WM]: ../img/icon/MW.png "White Mum"
+[YM]: ../img/icon/MY.png "Yellow Mum"
+[LM]: ../img/icon/MU.png "Purple Mum"
+[PM]: ../img/icon/MP.png "Pink Mum"
+[GM]: ../img/icon/MG.png "Green Mum"
+[LOTV]: ../img/icon/LOTV.png "Lily of the Valley"
+[Warning]: ../img/icon/Pitfall.png
+[Can]: ../img/icon/Can.png
+[Gold Can]: ../img/icon/CanGold.png
+[Book]: ../img/icon/Book.png
+[News]: ../img/icon/Post.png
+[Gift]: ../img/icon/Present.png
+[Shovel]: ../img/icon/Shovel.png
+[Time]: ../img/icon/Timer.png
+[Memo]: ../img/icon/LostMemo.png
+[Visitor]: ../img/icon/ExpGreeting.png
+[Cursor]: ../img/icon/HandRight.png
 
-[Seeds]: img/icon/SW.png
-[Bridge]: img/icon/Bridge.png
+[Seeds]: ../img/icon/SW.png
+[Bridge]: ../img/icon/Bridge.png
 
-[Weed]: img/icon/Weed.png
-[Coin]:img/icon/Coin.png "Bells"
-[RepAlg]: img/repalg.png	""Reproduction Algorithm""
+[Weed]: ../img/icon/Weed.png
+[Coin]:../img/icon/Coin.png "Bells"
+[RepAlg]: ../img/repalg.png	"Reproduction Algorithm"

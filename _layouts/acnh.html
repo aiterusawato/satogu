@@ -3,12 +3,20 @@ layout: default
 ---
 <article class="post">
 
-  <h2><a href="{{ site.data.nav.acnh-url }}">{{ site.data.nav.acnh-title }}</a></h2>
-    <ul>
-       {% for item in site.data.nav.acnh %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-       {% endfor %}
-    </ul>
+  {% assign nav = site.data.nav.acnh %}
+
+  <table class="menu">
+    <tr>
+      <th colspan="3"><a href="{{ site.data.nav.acnh_url }}">{{ site.data.nav.acnh_title }}</th>
+    </tr>
+    {% for row in nav %}
+      <tr>
+        {% for item in row.items %}
+          <td><img src="/satogu/acnh/{{ item.img }}" /><br /><a href="/satogu/acnh/{{ item.url }}">{{ item.title }}</a></td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>

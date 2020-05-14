@@ -81,7 +81,11 @@ table td {
 	max-width: 10%;
 }
 
-
+.menu {
+	width: 100%;
+	table-layout: fixed;
+	text-align: center;
+}
 
 .wrapper {
     position: relative;
