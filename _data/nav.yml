@@ -15,12 +15,12 @@ acnh:
       img: img/icon/Memo.png
   - row: 1
     items:
+    - title: Flower FAQ
+      url: flowers/faq.html
+      img: img/exp/QuestionMark.png
     - title: Simple Flower Guide
       url: flowers/simple.html
       img:  img/icon/WC.png
     - title: Advanced Flower Guide
       url: flowers/advanced.html
       img: img/icon/GWC.png
-    - title: Flower FAQ
-      url: flowers/faq.html
-      img: img/exp/QuestionMark.png
