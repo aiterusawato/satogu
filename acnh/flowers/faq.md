@@ -20,6 +20,10 @@ Because listing every possible combination is not the point of the guide. There 
 
 All flowers can clone except for gold rose and lily of the valley.
 
+> ###### Does moving a flower affects reproduction rates ?
+
+Yes. Digging up a flower will clear both its water and visitor counters, which means its reproduction chance will be reset to the base 5%.
+
 # Watering
 
 > ###### Do I need to water flowers if it has rained during this day ?
