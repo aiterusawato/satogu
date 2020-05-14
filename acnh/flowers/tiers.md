@@ -5,19 +5,19 @@ layout: acnh
 
 Flowers from each species can be ranked in tiers according to their selling price, wich is consistent with their possible source.
 
-| Tier          |                         Base *                         |                   Tier 1 *                   |          Tier 2           |              Tier 3              |
-| ------------- | :----------------------------------------------------: | :------------------------------------------: | :-----------------------: | :------------------------------: |
-| Selling Price |                      40![Coin][]                       |                 80![Coin][]                  |       240![Coin][]        |          1000![Coin][]           |
-| Source        | ![SW][]![SY][]![SO][]![SR][]<br />![NM][]<br />![BP][] |             ![NM][]<br />![BP][]             |          ![BP][]          |             ![BP][]              |
-| Generation ** |                           0                            |                      1                       | 1 (Roses)<br />2 (Others) | 2 (Gold Rose)<br />3 (Blue Rose) |
-| Rose          |    ![WR][]![YR][]![RR][]<br />`0010` `0200` `2001`     |      ![PR][]![OR][]<br />`2022` `2211`       |      ![LR][]![BR][]       |          ![UR][]![RG][]          |
-| Tulip         |      ![WT][]![YT][]![RT][]<br />`001` `020` `201`      | ![PT][]![OT][]![BT][]<br />`101` `120` `210` |          ![LT][]          |                                  |
-| Pansy         |      ![WP][]![YP][]![RP][]<br />`001` `020` `200`      |       ![OP][]![UP][]<br />`221` `102`        |          ![LP][]          |                                  |
-| Cosmos        |      ![WC][]![YC][]![RC][]<br />`001` `021` `200`      |       ![PC][]![OC][]<br />`112` `211`        |          ![BC][]          |                                  |
-| Lily          |      ![WL][]![YL][]![RL][]<br />`002` `020` `201`      | ![PL][]![OL][]![BL][]<br />`212` `221` `210` |                           |                                  |
-| Hyacinth      |      ![WH][]![YH][]![RH][]<br />`001` `020` `201`      | ![PH][]![OH][]![UH][]<br />`101` `120` `210` |          ![LH][]          |                                  |
-| Windflower    |      ![WW][]![OW][]![RW][]<br />`001` `020` `200`      |       ![PW][]![UW][]<br />`221` `102`        |          ![LW][]          |                                  |
-| Mum           |      ![WM][]![YM][]![RM][]<br />`001` `020` `200`      |       ![PM][]![LM][]<br />`112` `211`        |          ![GM][]          |                                  |
+| Tier          |                     Base *                      |                   Tier 1 *                   |          Tier 2           |              Tier 3              |
+| ------------- | :---------------------------------------------: | :------------------------------------------: | :-----------------------: | :------------------------------: |
+| Selling Price |                   40![Coin][]                   |                 80![Coin][]                  |       240![Coin][]        |          1000![Coin][]           |
+| Source        |              ![SR][]![NM][]![BP][]              |                ![NM][]![BP][]                |          ![BP][]          |             ![BP][]              |
+| Generation ** |                        0                        |                      1                       | 1 (Roses)<br />2 (Others) | 2 (Gold Rose)<br />3 (Blue Rose) |
+| Rose          | ![WR][]![YR][]![RR][]<br />`0010` `0200` `2001` |      ![PR][]![OR][]<br />`2022` `2211`       |      ![LR][]![BR][]       |          ![UR][]![RG][]          |
+| Tulip         |  ![WT][]![YT][]![RT][]<br />`001` `020` `201`   | ![PT][]![OT][]![BT][]<br />`101` `120` `210` |          ![LT][]          |                                  |
+| Pansy         |  ![WP][]![YP][]![RP][]<br />`001` `020` `200`   |       ![OP][]![UP][]<br />`221` `102`        |          ![LP][]          |                                  |
+| Cosmos        |  ![WC][]![YC][]![RC][]<br />`001` `021` `200`   |       ![PC][]![OC][]<br />`112` `211`        |          ![BC][]          |                                  |
+| Lily          |  ![WL][]![YL][]![RL][]<br />`002` `020` `201`   | ![PL][]![OL][]![BL][]<br />`212` `221` `210` |                           |                                  |
+| Hyacinth      |  ![WH][]![YH][]![RH][]<br />`001` `020` `201`   | ![PH][]![OH][]![UH][]<br />`101` `120` `210` |          ![LH][]          |                                  |
+| Windflower    |  ![WW][]![OW][]![RW][]<br />`001` `020` `200`   |       ![PW][]![UW][]<br />`221` `102`        |          ![LW][]          |                                  |
+| Mum           |  ![WM][]![YM][]![RM][]<br />`001` `020` `200`   |       ![PM][]![LM][]<br />`112` `211`        |          ![GM][]          |                                  |
 
 \* Numbers under Base and Tier 1 flowers are the default genes for seed and wild flowers.
 
