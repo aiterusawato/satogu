@@ -4,6 +4,12 @@
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
 @import "minima/initialize";
 
+.menu {
+	width: 100%;
+	table-layout: fixed;
+	text-align: center;
+}
+
 img {
 	width:32px;
 	height:32px;
@@ -81,11 +87,6 @@ table td {
 	max-width: 10%;
 }
 
-.menu {
-	width: 100%;
-	table-layout: fixed;
-	text-align: center;
-}
 
 .wrapper {
     position: relative;
