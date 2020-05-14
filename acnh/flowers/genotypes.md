@@ -3,7 +3,9 @@ title: Flower Genotypes
 layout: acnh
 ---
 
-|  G1  |  G2  |  G3  | Rose<br />G4 = 0 | Rose<br />G4 = 1 | Rose<br />G4 = 2 |   Tulip   |   Pansy   |  Cosmos   |   Lily    | Hyacinth  | Windflower |    Mum    |
+<div class = "table-wrapper" markdown="block">
+
+|  G1  |  G2  |  G3  | Rose<br />G4 = 0 | Rose<br />G4 = 1 | Rose<br />G4 = 2 |   Tulip   |   Pansy   |  Cosmos   |   Lily    | Hyacinth  | Windflower |    Mum    |
 | :--: | :--: | :--: | :--------------: | :--------------: | :--------------: | :-------: | :-------: | :-------: | :-------: | :-------: | :--------: | :-------: |
 |  0   |  0   |  0   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW]  | ![WM][WM] |
 |  0   |  0   |  1   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW]  | ![WM][WM] |
@@ -32,6 +34,8 @@ layout: acnh
 |  2   |  2   |  0   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW]  | ![GM][GM] |
 |  2   |  2   |  1   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW]  | ![GM][GM] |
 |  2   |  2   |  2   |    ![UR][UR]     |    ![RR][RR]     |    ![WR][WR]     | ![LT][LT] | ![LP][LP] | ![RC][RC] | ![WL][WL] | ![LH][LH] | ![LW][LW]  | ![RM][RM] |
+
+</div>
 
 [WR]: ../img/icon/RW.png "White Rose"
 [RR]: ../img/icon/RR.png "Red Rose"

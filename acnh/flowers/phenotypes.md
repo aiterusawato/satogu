@@ -3,6 +3,8 @@ title: Flower Phenotypes
 layout: acnh
 ---
 
+<div class = "table-wrapper" markdown="block">
+
 | Species    |  White  |  Pink   |   Red   | Orange  | Yellow  |  Green  |  Blue   | Purple  |  Black  |  Gold   |
 | ---------- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | Rose       | ![WR][] | ![PR][] | ![RR][] | ![OR][] | ![YR][] |         | ![UR][] | ![LR][] | ![BR][] | ![RG][] |
@@ -13,6 +15,8 @@ layout: acnh
 | Hyacinth   | ![WH][] | ![PH][] | ![RH][] | ![OH][] | ![YH][] |         | ![UH][] | ![LH][] |         |         |
 | Windflower | ![WW][] | ![PW][] | ![RW][] | ![OW][] |         |         | ![UW][] | ![LW][] |         |         |
 | Mum        | ![WM][] | ![PM][] | ![RM][] |         | ![YM][] | ![GM][] |         | ![LM][] |         |         |
+
+</div>
 
 [WR]: ../img/icon/RW.png "White Rose"
 [RR]: ../img/icon/RR.png "Red Rose"

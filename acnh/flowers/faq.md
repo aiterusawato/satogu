@@ -63,7 +63,7 @@ No. A single gold-flagged black rose can still produce a gold rose when cloning.
 
 No.
 
-> ###### Can rain create gold roses ?
+> ###### Can regular watering cans or rain create gold roses ?
 >
 
-No. If you get a gold rose after rain, it's because your black rose already had the gold flag. Rain only triggered the roll for reproduction, like any water does. Any water is water.
+No. If you get a gold rose after watering with a regular can or rain, it's because your black rose already had the gold flag. Rain only triggered the roll for reproduction, like any water does. Any water is water.
