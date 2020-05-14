@@ -592,7 +592,7 @@ Every day, weeds have a chance to spread depending on their current growth stage
 [Gift]: ../img/icon/Present.png
 [Shovel]: ../img/icon/Shovel.png
 [Time]: ../img/icon/Timer.png
-[Memo]: ../img/icon/LostMemo.png
+[Memo]: ../img/icon/Memo.png
 [Visitor]: ../img/icon/ExpGreeting.png
 [Cursor]: ../img/icon/HandRight.png
 
