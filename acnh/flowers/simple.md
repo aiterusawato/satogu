@@ -13,33 +13,47 @@ Learn the basics of flower mechanics and obtain all the flowers you want easily.
 
 Flowers can be obtained from three different sources.
 
-|                 Source                 | Details                                                      |
-| :------------------------------------: | ------------------------------------------------------------ |
-| ![SR][]![SO][]![SY][]![SW][]<br />Seed | Buy flower seeds and plant them                              |
-|           ![NM][]<br />Wild            | Travel to mystery islands and bring the wild flowers you find there |
-|       ![BP][]<br />Reproduction        | Have your flowers hydrated to have a chance at reproducing   |
+|          Source           | Details                                                      |                         |
+| :-----------------------: | ------------------------------------------------------------ | ----------------------- |
+|    ![SR][]<br />Seeds     | Buy flower seeds and plant them                              | Spawns new sprouts      |
+|   ![NM][]<br />Islands    | Travel to mystery islands and bring the wild flowers you find there | Wild flowers are plants |
+| ![BP][]<br />Reproduction | Hydrated flowers may reproduce                               | Spawns new buds         |
 
 # Flower Life Cycle
+
+## Growth Stages
+
+Flowers have four growth stages, which determine if they can grow, reproduce, be plucked or be trampled.
+
+| Stage Number    |                              1                               |                              2                               |                              3                               |                              4                               |
+| --------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Stage Name      | <img class="stage" src="../img/svg/FlwStg1.svg" /><br />Sprouts | <img class="stage" src="../img/svg/FlwStg2.svg" /><br />Stems | <img class="stage" src="../img/svg/FlwStg3.svg" /><br />Buds | <img class="stage" src="../img/svg/FlwStg4.svg" /><br />Plant |
+| Source          |                      ![SW][]<br />Seeds                      |                             None                             |                  ![BP][]<br />Reproduction                   |                     ![NM][]<br />Islands                     |
+| Can Grow        |                              ✓                               |                              ✓                               |                              ✓                               |                              ✗                               |
+| Can Reproduce   |                              ✗                               |                              ✗                               |                              ✓                               |                              ✓                               |
+| Can be Plucked  |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
+| Can be Trampled |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
+
+## Events
 
 Flowers can grow and reproduce when the right conditions are met. Like most daily events, flower growth and reproduction is processed during the daily refresh, which happens when you open the game for the first time of the day after 5:00 AM.
 
 > The moment you see the daily announcement by Tom Nook or Isabelle, it means the daily refresh has just been completed.
 
-| Flower Daily Event | Conditions                                                   |
-| ------------------ | ------------------------------------------------------------ |
-| Growth             | 1. Flower is not plant stage<br />2. Flower is not placed on the beach |
-| Reproduction       | 1. Flower is buds or plant stage<br />2. Flower is not placed on the beach<br />3. Flower has been hydrated during the day<br />4. Flower has a valid adjacent tile to spawn a child on |
+Flowers can also be plucked or trampled. Plucking a flower will revert it to the stems stage, and the player will receive the corrsponding flower item, which can be used as a material in DIY Recipes. Trampling a flower will revert it to buds stage with no additional effect.
 
-## Growth
+> When a flower reverts to a previous stage, events will still apply normally, according to the new stage.
+
+| Event        | Trigger                                                      | Effect                                                       |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Growth       | Daily Refresh<br />1. Sprouts, stems or buds stage<br />2. Not placed on the beach | → Grows to the next stage                                    |
+| Reproduction | Daily Refresh<br />1. Buds or plant stage<br />2. Not placed on the beach<br />3. Has been hydrated during the day<br />4. Has a valid tile to spawn a child on | Roll for reproduction<br />If successful :<br />1. Valid partner → Breed<br />2. No valid partner → Clone<br />→ Spawns new buds on a valid tile |
+| Plucking     | Picked up by any player<br />(plant stage only)              | → Reverts to stems<br />→ Player receives corresponding item |
+| Trampling    | Runned over by any player<br />(plant stage only)            | → Reverts to buds                                            |
 
 
 
-|                        Icon                        | Stage                |     Can Grow     |  Can be Plucked  | Can be Trampled  |    Can Reproduce     |
-| :------------------------------------------------: | -------------------- | :--------------: | :--------------: | :--------------: | :------------------: |
-| <img class="stage" src="../img/svg/FlwStg1.svg" /> | Stage 1<br />Sprouts | ✓<br />→ Stage 2 |        ✗         |        ✗         |          ✗           |
-| <img class="stage" src="../img/svg/FlwStg2.svg" /> | Stage 2<br />Stems   | ✓<br />→ Stage 3 |        ✗         |        ✗         |          ✗           |
-| <img class="stage" src="../img/svg/FlwStg3.svg" /> | Stage 3<br />Buds    | ✓<br />→ Stage 4 |        ✗         |        ✗         | ✓<br />→ Breed/Clone |
-| <img class="stage" src="../img/svg/FlwStg4.svg" /> | Stage 4<br />Plant   |        ✗         | ✓<br />→ Stage 2 | ✓<br />→ Stage 3 | ✓<br />→ Breed/Clone |
+
 
 ## Reproduction
 
@@ -343,7 +357,7 @@ The simplest way to clone a flower is to put it on its own, not touching any oth
 | :-----: | :----------------------------------------------: | :----------------------------------------------: |
 | Cloning | <img class="layout" src="../img/layout/clo1.png" /> | <img class="layout" src="../img/layout/clo2.png" /> |
 
-###### Credits
+# Credits
 
 * Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 

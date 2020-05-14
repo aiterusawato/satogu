@@ -10,11 +10,8 @@
 	text-align: center;
 }
 
-p {
-	text-align: justify;
-}
-
-blockquote {
+p, blockquote {
+	font-size: 16px;
 	text-align: justify;
 	font-style: normal;
 }
@@ -45,11 +42,12 @@ h3 img {
 
 }
 table {
+	/*
 	max-width: 100%;
 	table-layout:fixed;
+	*/
 	margin-bottom: 15px;
 }
-
 
 th, td {
 	/*font-size: 0.7em;*/
