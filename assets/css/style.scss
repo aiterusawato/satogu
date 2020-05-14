@@ -45,8 +45,9 @@ h3 img {
 
 }
 table {
-	/*max-width: 100%;*/
-	/*table-layout:fixed;*/
+	max-width: 100%;
+	table-layout:fixed;
+	margin-bottom: 15px;
 }
 
 
@@ -70,18 +71,20 @@ table img {
 	height: auto;
 }
 
+.stage {
+	width: 64px;
+	height: 64px;
+}
+
 .table-wrapper {
   overflow-x: scroll;
 }
 
-// Adding 'Contents' headline to the TOC
 #markdown-toc::before {
     content: "Contents";
     font-weight: bold;
 }
 
-
-// Using numbers instead of bullets for listing
 #markdown-toc ul {
     list-style: decimal;
 }
@@ -93,19 +96,6 @@ table img {
     list-style: decimal;
     display: block;
 }
-
-table {
-	display: inline-block;
-	overflow-x: auto;
-}
-
-
-table td {
-	width: 10%;
-	min-width: 10%;
-	max-width: 10%;
-}
-
 
 .wrapper {
     position: relative;

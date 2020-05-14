@@ -13,16 +13,35 @@ Learn the basics of flower mechanics and obtain all the flowers you want easily.
 
 Flowers can be obtained from three different sources.
 
-| Source       | Details                                                      | Icon                         |
-| ------------ | ------------------------------------------------------------ | ---------------------------- |
-| Seed         | You can buy flower seeds from Timmy and Tommy or Leif        | ![SR][]![SO][]![SY][]![SW][] |
-| Wild         | You can find wild flowers of your main or sub species on mystery islands * | ![NM][]                      |
-| Reproduction | Hydrated flowers at buds or plant stage have a chance to reproduce during the daily refresh ** | ![BP][]                      |
+|                 Source                 | Details                                                      |
+| :------------------------------------: | ------------------------------------------------------------ |
+| ![SR][]![SO][]![SY][]![SW][]<br />Seed | Buy flower seeds and plant them                              |
+|           ![NM][]<br />Wild            | Travel to mystery islands and bring the wild flowers you find there |
+|       ![BP][]<br />Reproduction        | Have your flowers hydrated to have a chance at reproducing   |
 
-\* Base tier flowers found on mystery islands are the same as those grown from seeds.
+# Flower Life Cycle
 
-\*\* Daily refresh happens when you open the game for the first time of the day after 5:00 AM.
-When you see the daily announcement by Tom Nook or Isabelle, it means the daily refresh has just been completed.
+Flowers can grow and reproduce when the right conditions are met. Like most daily events, flower growth and reproduction is processed during the daily refresh, which happens when you open the game for the first time of the day after 5:00 AM.
+
+> The moment you see the daily announcement by Tom Nook or Isabelle, it means the daily refresh has just been completed.
+
+| Flower Daily Event | Conditions                                                   |
+| ------------------ | ------------------------------------------------------------ |
+| Growth             | 1. Flower is not plant stage<br />2. Flower is not placed on the beach |
+| Reproduction       | 1. Flower is buds or plant stage<br />2. Flower is not placed on the beach<br />3. Flower has been hydrated during the day<br />4. Flower has a valid adjacent tile to spawn a child on |
+
+## Growth
+
+
+
+|                        Icon                        | Stage                |     Can Grow     |  Can be Plucked  | Can be Trampled  |    Can Reproduce     |
+| :------------------------------------------------: | -------------------- | :--------------: | :--------------: | :--------------: | :------------------: |
+| <img class="stage" src="../img/svg/FlwStg1.svg" /> | Stage 1<br />Sprouts | ✓<br />→ Stage 2 |        ✗         |        ✗         |          ✗           |
+| <img class="stage" src="../img/svg/FlwStg2.svg" /> | Stage 2<br />Stems   | ✓<br />→ Stage 3 |        ✗         |        ✗         |          ✗           |
+| <img class="stage" src="../img/svg/FlwStg3.svg" /> | Stage 3<br />Buds    | ✓<br />→ Stage 4 |        ✗         |        ✗         | ✓<br />→ Breed/Clone |
+| <img class="stage" src="../img/svg/FlwStg4.svg" /> | Stage 4<br />Plant   |        ✗         | ✓<br />→ Stage 2 | ✓<br />→ Stage 3 | ✓<br />→ Breed/Clone |
+
+## Reproduction
 
 
 
@@ -324,8 +343,16 @@ The simplest way to clone a flower is to put it on its own, not touching any oth
 | :-----: | :----------------------------------------------: | :----------------------------------------------: |
 | Cloning | <img class="layout" src="../img/layout/clo1.png" /> | <img class="layout" src="../img/layout/clo2.png" /> |
 
+###### Credits
+
+* Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
+
 [News]: ../img/icon/Post.png "News"
 [Coin]: ../img/icon/Coin.png "Bells"
+[ST1]: ../img/svg/FlwStg1.svg "Sprouts"
+[ST2]: ../img/svg/FlwStg2.svg "Stems"
+[ST3]: ../img/svg/FlwStg3.svg "Buds"
+[ST4]: ../img/svg/FlwStg4.svg "Plant"
 [IWC]: 	../img/icon/WC.png "Iron Watering Can"
 [GWC]: 	../img/icon/GWC.png "Gold Watering Can"
 [LOTV]: ../img/icon/LOTV.png "Lily of the Valley"
