@@ -4,8 +4,7 @@ layout: acnh
 ---
 
 * Contents
-
-  {:toc}
+{:toc}
 
 # Water
 
