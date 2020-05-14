@@ -5,8 +5,13 @@ layout: acnh
 
 * Contents
 {:toc}
+# Reproduction
 
-# Water
+## Can this flower clone ?
+
+All flowers can clone except for gold rose and lily of the valley.
+
+# Watering
 
 ## Do I need to water flowers if it has rained during this day ?
 
@@ -29,6 +34,10 @@ No. Visitors are people who visit. Local villagers are not visiting.
 No. Visitors are people who visit. Rain is not people.
 
 # Gold Rose
+
+## Do black roses need to breed to produce gold rose ?
+
+No. A single gold-flagged black rose can still produce a gold rose when cloning.
 
 ## Do gold rose clone ?
 
