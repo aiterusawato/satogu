@@ -8,161 +8,49 @@ Learn the basics of flower mechanics and obtain all the flowers you want easily.
 
 * Contents
 {:toc}
-
-# Flower Sources
-
-Flowers can be obtained from three different sources.
-
-|          Source           | Details                                                      |                         |
-| :-----------------------: | ------------------------------------------------------------ | ----------------------- |
-|    ![SR][]<br />Seeds     | Buy flower seeds and plant them                              | Spawns new sprouts      |
-|   ![NM][]<br />Islands    | Travel to mystery islands and bring the wild flowers you find there | Wild flowers are plants |
-| ![BP][]<br />Reproduction | Hydrated flowers may reproduce                               | Spawns new buds         |
-
-# Flower Life Cycle
-
-## Growth Stages
-
-Flowers have four growth stages, which determine if they can grow, reproduce, be plucked or be trampled.
-
-| Stage Number    |                              1                               |                              2                               |                              3                               |                              4                               |
-| --------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| Stage Name      | <img class="stage" src="../img/svg/FlwStg1.svg" /><br />Sprouts | <img class="stage" src="../img/svg/FlwStg2.svg" /><br />Stems | <img class="stage" src="../img/svg/FlwStg3.svg" /><br />Buds | <img class="stage" src="../img/svg/FlwStg4.svg" /><br />Plant |
-| Source          |                      ![SW][]<br />Seeds                      |                             None                             |                  ![BP][]<br />Reproduction                   |                     ![NM][]<br />Islands                     |
-| Can Grow        |                              ✓                               |                              ✓                               |                              ✓                               |                              ✗                               |
-| Can Reproduce   |                              ✗                               |                              ✗                               |                              ✓                               |                              ✓                               |
-| Can be Plucked  |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
-| Can be Trampled |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
-
-## Events
-
-Flowers can grow and reproduce when the right conditions are met. Like most daily events, flower growth and reproduction is processed during the daily refresh, which happens when you open the game for the first time of the day after 5:00 AM.
-
-> The moment you see the daily announcement by Tom Nook or Isabelle, it means the daily refresh has just been completed.
-
-Flowers can also be plucked or trampled. Plucking a flower will revert it to the stems stage, and the player will receive the corrsponding flower item, which can be used as a material in DIY Recipes. Trampling a flower will revert it to buds stage with no additional effect.
-
-> When a flower reverts to a previous stage, events will still apply normally, according to the new stage.
-
-| Event        | Trigger                                                      | Effect                                                       |
-| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Growth       | Daily Refresh<br />1. Sprouts, stems or buds stage<br />2. Not placed on the beach | → Grows to the next stage                                    |
-| Reproduction | Daily Refresh<br />1. Buds or plant stage<br />2. Not placed on the beach<br />3. Has been hydrated during the day<br />4. Has a valid tile to spawn a child on | Roll for reproduction<br />If successful :<br />1. Valid partner → Breed<br />2. No valid partner → Clone<br />→ Spawns new buds on a valid tile |
-| Plucking     | Picked up by any player<br />(plant stage only)              | → Reverts to stems<br />→ Player receives corresponding item |
-| Trampling    | Runned over by any player<br />(plant stage only)            | → Reverts to buds                                            |
-
-
-
-
-
-## Reproduction
-
-
-
-# Efficient Flower Farming
+# Simple Farming Steps
 
 Even though the flower mechanics can be very deep, you can farm all the flowers you want easily and efficiently by following these very simple steps and rules.
 
-* **Efficient Farming Steps**
+| Step | Instructions                                                 |
+| :--: | ------------------------------------------------------------ |
+| 1<br />![SW][] | Grow new flowers from seeds or bring wild flowers from mystery islands<br />→ Once you can see the flower's color, it will be able to reproduce |
+| 2<br />![](../img/exp/Love.png) | Put your flowers in [breeding fields](#simple-breeding-fields) to get new colors<br />→ Follow the breeding combinations and layouts shown in this guide |
+| 3<br />![](../img/exp/BrokenHeart.png) | Put your flowers in [cloning fields](#simple-cloning-fields) to get same color<br />→ Follow the cloning layouts shown in this guide |
+| 4<br />![BP][] | Have your flowers hydrated once a day by watering can or rain<br />→ Once the flower is sparkling, it's hydrated and will have a chance to reproduce |
+| 5<br />![](../img/exp/Greeting.png) | Have up to five visitors water your flowers to speed up the process<br />→ Visitor watering will increase the reproduction chance for this day |
 
-| Step |             Icon             | Instructions                                                 | Details                                |
-| :--: | :--------------------------: | ------------------------------------------------------------ | -------------------------------------- |
-|  1   | ![](../img/exp/HappyFlower.png) | Grow flowers from seeds or bring wild flowers from mystery islands | Seed and wild flowers have fixed genes |
-|  2   |    ![](../img/exp/Love.png)     | Put flowers in breeding fields to get new colors             | Use breeding layout to force breeding  |
-|  3   | ![](../img/exp/BrokenHeart.png) | Put flowers in cloning fields to get same color              | Use cloning layout to force cloning    |
+## Daily Farming Routine
 
-* **Efficient Farming Rules**
+Every day at 5:00 AM, the daily refresh takes place. Flowers will grow, and grown flowers which have been hydrated during the day will have a chance to reproduce. Follow this routine every day to farm your flowers efficiently.
 
-| Rule |           Icon            | Instruction                                                | Details                                                      |
-| :--: | :-----------------------: | ---------------------------------------------------------- | ------------------------------------------------------------ |
-|  1   |   ![](../img/exp/Love.png)   | Always use proper parents                                  | In this guide, parents have an icon telling you were they must come from<br />In the case of bred flowers, make sure you are using the ones with the right genes |
-|  2   | ![](../img/exp/Nodding.png)  | Always move new children away                              | Leaving children on the breeding field would mess up the layout |
-|  3   | ![](../img/exp/Negative.png) | Never use children for breeding unless otherwise specified | Children could have bad genes leading to breeding dead ends  |
+| Step | Instructions                                                 |
+| :--: | ------------------------------------------------------------ |
+| 1<br />![](../img/exp/HappyFlower.png) | After 5:00 AM : Check your farming fields |
+| 2<br />![](../img/exp/Nodding.png) | Dig up the new children<br />→ Move to another breeding field if needed<br />→ Move to cloning field if you want more<br />→ Discard if you don't want it |
+| 3<br />![](../img/exp/Thinking.png) | Optional : Update your farming fields<br />→ Make sure everything is in its right place before inviting watering visitors |
+| 4<br />![](../img/exp/Greeting.png) | Optional : Have up to five visitors water your farming fields<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Don't move your flowers after this or their bonus will be reset |
+| 5<br />![](../img/exp/Sleepy.png) | Before 5:00 AM : Water the farming fields<br />→ Not needed if you had watering visitors or if it has rained<br />→ Keep this task for the end of the day in case it rains |
 
-* **Daily Farming Routine**
+# Simple Breeding Fields
 
-| Step |             Icon             | Instructions                                                 | Tips                                                         |
-| :--: | :--------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|  1   | ![](../img/exp/HappyFlower.png) | Check the farming fields                                     | You can check from 5:00 AM                                   |
-|  2   |   ![](../img/exp/Nodding.png)   | Move the new children away                                   | Used in another breeding step → move to corresponding breeding field<br />Want more of it → move to cloning field<br />Don't need it → discard |
-|  3   |  ![](../img/exp/Thinking.png)   | Update fields if needed                                      | Make sure everything is in its right place before inviting watering visitors |
-|  4   |  ![](../img/exp/Greeting.png)   | Have up to five visitors water the farming fields (optional) | Increases visitor counter bonus<br />Don't move the flowers after this or the bonus will be reset |
-|  5   |   ![](../img/exp/Sleepy.png)    | Water the farming fields                                     | Not needed if you had watering visitors or if it has rained<br />Should always be the last task of the day |
+The simplest way to breed two flowers is to put them next to each other as an isolated pair, not touching any other flower of their species. You can add another species in between pairs to make efficient use of the available space.
 
-## Hydration
+|               Single Species Breeding               |              Multiple Species Breeding              |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+| <img class="layout" src="../img/layout/iso1.png" /> | <img class="layout" src="../img/layout/iso2.png" /> |
 
-Flowers will be considered hydrated for the day as soon as any player or villager uses a watering can on them, or if it has rained during the day. Hydrated flowers will shine small silver sparkles.
+There are a lot of different flower combinations, with each one having multiple possible outcomes. The combinations shown in this guide are balanced to be both simple and effective.
 
-> Flowers are either dry or hydrated. They cannot become more hydrated than hydrated.
-> Having flowers watered before or after it has rained will not change their hydration state.
-> Having flowers watered by multiple players or villagers will not change their hydration state.
+Make sure to follow these very important rules when breeding.
 
-| Water Source                                       | Effect on Flower                                             |
-| -------------------------------------------------- | ------------------------------------------------------------ |
-| Islander Watering<br />(Player from your Island)   | Hydrated for the day                                         |
-| Villager Watering<br />(Animal from your Island)   | Hydrated for the day                                         |
-| Visitor Watering<br />(Player from another Island) | Hydrated for the day<br />Visitor Counter +1 for the day     |
-| Rain                                               | Hydrated for the day                                         |
-| Player with Golden Watering Can                    | Hydrated for the day<br />Gold Flag on Black Rose on the center tile until it produces a Gold Rose |
-
-## Visitor Watering Bonus
-
-Flowers will have an increased reproduction chance based on the number of visitors from other islands who watered them during that day. Flowers watered by five visitors or more will shine big gold sparkles.
-
-> Visitors are players from other islands who visit your island.
-> Players living on your own island are not visitors. Rain is not a visitor.
-
-The best way to have a lot of new flowers every day is to have five visitors coming to water them.
-
-> Visitors are players, and any player using a watering can on a flower will hydrate it.
-> Flowers watered by visitors are hydrated for the day, and don't need to be hydrated again.
-
-| Visitor Counter | Reproduction Chance |
-| --------------- | :-----------------: |
-| 0               |         5%          |
-| 1               |         25%         |
-| 2               |         35%         |
-| 3               |         50%         |
-| 4               |         65%         |
-| 5+              |         80%         |
-
-# Efficient Flower Breeding
-
-Breeding happens when a flower succeeds in reproducing and has an available partner.
-
-> An available partner is an adjacent flower of the same species which has not already bred during the current daily refresh.
-
-* **Breeding Mechanics**
-
-When two flowers breed, a child flower will spawn on an empty tile adjacent to the parent which initiated reproduction, at buds stage. The child will have genes from both its parents, which will determine its color.
-
-> Breeding is only important for obtaining new colors.
-> Once you have a flower of a color you want, the best way to get more of it is always to clone.
-
-Flower breeding outcome is not determined by colors, but by hidden values called genes.
-
-> There is no way to tell a flower's genes by looking at it in the game.
-
-The only way to ensure your flowers have the right genes is to start breeding from seed or wild flowers, which have fixed default genes.
-
-* **Breeding Layouts**
-
-The simplest way to breed two flowers is to put them next to each other, not touching any other flower of their species. You can add more species to make efficient use of the available space.
-
-> Don't use checkerboard layouts, they are bad most of the time.
-
-|     Layout     |                  Single Species                  |                 Multiple Species                 |
-| :------------: | :----------------------------------------------: | :----------------------------------------------: |
-| Isolated Pairs | <img class="layout" src="../img/layout/iso1.png" /> | <img class="layout" src="../img/layout/iso2.png" /> |
-|    Diamonds    | <img class="layout" src="../img/layout/dia1.png" /> | <img class="layout" src="../img/layout/dia2.png" /> |
+|                Rule                 | Instruction                                                  |
+| :---------------------------------: | ------------------------------------------------------------ |
+|   1<br />![](../img/exp/Love.png)   | Always use the proper parents<br />→ Parent flowers have an icon telling you were they must come from<br />→ In the case of bred flowers, pay attention to the numbers |
+| 2<br />![](../img/exp/Nodding.png)  | Always dig up the new children and move them away            |
+| 3<br />![](../img/exp/Negative.png) | Never use the new children for breeding unless otherwise specified |
 
 ## Lilies
-
-Lilies are the easiest flowers to breed.
-
-Pink, orange and black lilies are all first-generation breeds.
-
-* **Combinations**
 
 |       Parent        |       Parent        |                    Child                     |    Chance    |
 | :-----------------: | :-----------------: | :------------------------------------------: | :----------: |
@@ -170,15 +58,7 @@ Pink, orange and black lilies are all first-generation breeds.
 | ![][YL]![SY][]`020` | ![][RL]![SR][]`201` |             ![][OL]![BP][]`110`              |     50%      |
 | ![][RL]![SR][]`201` | ![][RL]![SR][]`201` | ![][BL]![BP][]`200`<br />![][PL]![BP][]`202` | 25%<br />25% |
 
-* **Breeding Example**
-
-| Step |                      Layout                      |                   Parents                    |                           Children                           |
-| :--: | :----------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: |
-|  1   | <img class="layout" src="../img/layout/lil1.png" /> | ![][YL]![SY][]`020`<br />![][RL]![SR][]`201` | ![][OL]![BP][]`110`<br />![][BL]![BP][]`200`<br />![][PL]![BP][]`202` |
-
 ## Cosmos
-
-* **Combinations**
 
 |                    Parent                    |                    Parent                    |                            Child                             |              Chance               |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :-------------------------------: |
@@ -187,16 +67,7 @@ Pink, orange and black lilies are all first-generation breeds.
 | ![][OC]![BP][]`110`<br />![OC][]![BP][]`111` | ![][OC]![BP][]`110`<br />![OC][]![BP][]`111` | ![][PC]![BP][]`100`<br />![][PC]![BP][]`101`<br />![][PC]![BP][]`102`<br />![][PC]![BP][]`112`<br />![][BC]![BP][]`220`<br />![BC][]![BP][]`221` | 12.5% ~ 18.75%<br />4.69% ~ 6.25% |
 |             ![][OC]![NM][]`211`              |             ![][OC]![NM][]`211`              |         ![][BC]![BP][]`220`<br />![BC][]![BP][]`221`         |         6.25%<br />12.5%          |
 
-* **Breeding Example**
-
-| Step |                      Layout                      |                   Parents                    |                           Children                           |
-| :--: | :----------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: |
-|  1   | <img class="layout" src="../img/layout/cos1.png" /> | ![][YC]![SY][]`021`<br />![][RC]![SR][]`200` |         ![][OC]![BP][]`110`<br />![OC][]![BP][]`111`         |
-|  2   | <img class="layout" src="../img/layout/cos2.png" /> | ![][OC]![BP][]`110`<br />![OC][]![BP][]`111` | ![][PC]![BP][]`100`<br />![][PC]![BP][]`101`<br />![][PC]![BP][]`102`<br />![][PC]![BP][]`112`<br />![][BC]![BP][]`220`<br />![BC][]![BP][]`221` |
-
 ## Hyacinths
-
-* **Combinations**
 
 |                    Parent                    |                    Parent                    |                            Child                             |                Chance                |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----------------------------------: |
@@ -206,17 +77,7 @@ Pink, orange and black lilies are all first-generation breeds.
 |             ![][OH]![BP][]`110`              |             ![][OH]![BP][]`110`              | ![][OH]![BP][]`110`<br />![][OH]![NM][]`120`<br />![][UH]![NM][]`210`<br />![][LH]![BP][]`220` | 25%<br />12.5%<br />12.5%<br />6.25% |
 | ![][OH]![NM][]`120`<br />![][UH]![NM][]`210` | ![][OH]![NM][]`120`<br />![][UH]![NM][]`210` |                     ![][LH]![BP][]`220`                      |                 25%                  |
 
-* **Breeding Example**
-
-| Step |                      Layout                      |                           Parents                            |                           Children                           |
-| :--: | :----------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|  1   | <img class="layout" src="../img/layout/hya1.png" /> | ![][WH]![SW][]`001`<br />![][YH]![SY][]`020`<br />![][RH]![SR][]`201` |         ![][PH]![BP][]`101`<br />![][OH]![BP][]`110`         |
-|  2   | <img class="layout" src="../img/layout/hya2.png" /> |                     ![][OH]![BP][]`110`                      | ![][OH]![BP][]`110`<br />![][OH]![NM][]`120`<br />![][UH]![NM][]`210`<br />![][LH]![BP][]`220` |
-|  3   | <img class="layout" src="../img/layout/hya3.png" /> |                     ![][UH]![NM][]`210`                      |         ![][UH]![NM][]`210`<br />![][LH]![BP][]`220`         |
-
 ## Tulips
-
-* **Combinations**
 
 |                    Parent                    |                    Parent                    |                            Child                             |                     Chance                      |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :---------------------------------------------: |
@@ -227,20 +88,7 @@ Pink, orange and black lilies are all first-generation breeds.
 |             ![][OT]![BP][]`110`              |             ![][OT]![NM][]`120`              | ![][OT]![BP][]`110`<br />![][OT]![NM][]`120`<br />![][BT]![NM][]`210`<br />![][LT]![BP][]`220` |       25%<br />25%<br />12.5%<br />12.5%        |
 | ![][OT]![NM][]`120`<br />![BT][]![NM][]`210` | ![][OT]![NM][]`120`<br />![BT][]![NM][]`210` |                     ![][LT]![BP][]`220`                      |                       25%                       |
 
-* **Breeding Example**
-
-| Step |                      Layout                      |                           Parents                            |                           Children                           |
-| :--: | :----------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|  1   | <img class="layout" src="../img/layout/tul1.png" /> | ![][WT]![SW][]`001`<br />![][YT]![SY][]`020`<br />![][RT]![SR][]`201` |         ![][PT]![BP][]`101`<br />![][OT]![BP][]`110`         |
-|  2   | <img class="layout" src="../img/layout/tul2.png" /> |                     ![][OT]![BP][]`110`                      | ![][OT]![BP][]`110`<br />![][OT]![NM][]`120`<br />![][BT]![BP][]`200`<br />![][BT]![BP][]`210`<br />![][LT]![BP][]`220` |
-
-Step 2 produces new orange children, from which 2/3 are `110` and 1/3 is `120`. When an orange pair produces a white, yellow or red child, it means both parents are `110`. Thus you can replace them with new orange children, in hope that some of them are `120`, which give better chances of purple, either coupled together or with `110`.
-
 ## Pansies
-
-Pansies and windflowers share the same color determination rules, with yellow pansy corresponding to orange windflower, and orange pansy corresponding to pink windflower.
-
-* **Combinations**
 
 |                    Parent                    |                    Parent                    |                            Child                             | Chance |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----: |
@@ -250,11 +98,7 @@ Pansies and windflowers share the same color determination rules, with yellow pa
 |             ![][RP]![BP][]`101`              |             ![][RP]![BP][]`101`              |                     ![][LP]![BP][]`202`                      | 6.25%  |
 | ![UP][]![NM][]`102`<br />![][OP]![NM][]`221` | ![NM][]![UP][]`102`<br />![NM][]![][OP]`221` | ![][LP]![BP][]`202`<br />![][LP]![BP][]`212`<br />![][LP]![BP][]`222` |  25%   |
 
-### Windflowers
-
-Pansies and windflowers share the same color determination rules, with yellow pansy corresponding to orange windflower, and orange pansy corresponding to pink windflower.
-
-* **Combinations**
+## Windflowers
 
 |                    Parent                    |                    Parent                    |                            Child                             | Chance |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----: |
@@ -265,8 +109,6 @@ Pansies and windflowers share the same color determination rules, with yellow pa
 | ![UW][]![NM][]`102`<br />![][PW]![NM][]`221` | ![NM][]![UW][]`102`<br />![NM][]![][PW]`221` | ![][LW]![BP][]`202`<br />![][LW]![BP][]`212`<br />![][LW]![BP][]`222` |  25%   |
 
 ## Mums
-
-* **Combinations**
 
 |                    Parent                    |                    Parent                    |                            Child                             |           Chance            |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :-------------------------: |
@@ -280,45 +122,34 @@ Pansies and windflowers share the same color determination rules, with yellow pa
 
 ## Roses
 
-Roses is the only species which has four genes.
-
-* **Combinations**
-
-|        Parent        |        Parent        |                     Child                      |    Chance    |
-| :------------------: | :------------------: | :--------------------------------------------: | :----------: |
-| ![][WR]![SW][]`0010` | ![][WR]![SW][]`0010` |              ![][LR]![BP][]`0020`              |     25%      |
-| ![][WR]![SW][]`0010` | ![][RR]![SR][]`2001` | ![][PR]![BP][]`1001`<br />![][PR]![BP][]`1011` | 25%<br />25% |
-| ![][YR]![SY][]`0200` | ![][RR]![SR][]`2001` |              ![][OR]![BP][]`1100`              |     50%      |
-| ![][RR]![SR][]`2001` | ![][RR]![SR][]`2001` | ![][BR]![BP][]`2000`<br />![][PR]![BP][]`2002` | 25%<br />25% |
-
-### Blue Rose
-
-Blue Rose is the hardest flower to breed because of the fourth gene. There are multiple routes to breed them, these two are the simplest ones. If you have access to Mystery Island Orange Roses, use the Mystery Island Orange Route. Otherwise, use the Asteriation Route.
-
-* **Asteriation Route**
-
-|        Parent        |        Parent        |        Child         | Chance |
-| :------------------: | :------------------: | :------------------: | :----: |
-| ![][WR]![SW][]`0010` | ![][WR]![SW][]`0010` | ![][LR]![BP][]`0020` |  25%   |
-| ![][LR]![BP][]`0020` | ![][RR]![SR][]`2001` | ![][PR]![BP][]`1011` |  50%   |
-| ![][PR]![BP][]`1011` | ![][YR]![SY][]`0200` | ![][RR]![BP][]`1110` | 12.5%  |
-| ![][RR]![BP][]`1110` | ![][RR]![BP][]`1110` | ![][UR]![BP][]`2220` | 1.56%  |
-
-* **Mystery Island Orange Route**
-
 |        Parent        |        Parent        |                     Child                      |      Chance      |
 | :------------------: | :------------------: | :--------------------------------------------: | :--------------: |
+| ![][WR]![SW][]`0010` | ![][WR]![SW][]`0010` |              ![][LR]![BP][]`0020`              |       25%        |
+| ![][WR]![SW][]`0010` | ![][RR]![SR][]`2001` | ![][PR]![BP][]`1001`<br />![][PR]![BP][]`1011` |   25%<br />25%   |
+| ![][YR]![SY][]`0200` | ![][RR]![SR][]`2001` |              ![][OR]![BP][]`1100`              |       50%        |
+| ![][RR]![SR][]`2001` | ![][RR]![SR][]`2001` | ![][BR]![BP][]`2000`<br />![][PR]![BP][]`2002` |   25%<br />25%   |
+| ![][LR]![BP][]`0020` | ![][RR]![SR][]`2001` |              ![][PR]![BP][]`1011`              |       50%        |
+| ![][PR]![BP][]`1011` | ![][YR]![SY][]`0200` |              ![][RR]![BP][]`1110`              |      12.5%       |
+| ![][RR]![BP][]`1110` | ![][RR]![BP][]`1110` |              ![][UR]![BP][]`2220`              |      1.56%       |
 | ![][OR]![NM][]`2211` | ![][OR]![NM][]`2211` | ![RR][]![BP][]`2221`<br />![][UR]![BP][]`2220` | 12.5%<br />6.25% |
 | ![][OR]![NM][]`2211` | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221`<br />![][UR]![BP][]`2220` | 12.5%<br />12.5% |
 | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221`<br />![][UR]![BP][]`2220` |   50%<br />25%   |
 
-### Gold Rose
+# Simple Cloning Fields
 
-Gold Rose is a special flower which can only be obtained from a Black Rose which has been watered by a Golden Watering Can.
+The simplest way to clone a flower is to put it on its own, not touching any other flower of its species. You can add more species to make efficient use of the available space.
 
-|                       Parent                       |       Parent       |     Child     | Chance |
-| :------------------------------------------------: | :----------------: | :-----------: | :----: |
-| ![][BR]![GWC][]<br />Any Black Rose with Gold Flag | Nothing / Any Rose | ![RG][]`0000` |  50%   |
+|               Single Species Cloning                |              Multiple Species Cloning               |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+| <img class="layout" src="../img/layout/clo1.png" /> | <img class="layout" src="../img/layout/clo2.png" /> |
+
+# Gold Roses
+
+Gold roses are special flowers which can only be obtained from breeding or cloning a black rose which has been watered by a golden watering can. 
+
+|                       Parent                       |         Child         | Chance |
+| :------------------------------------------------: | :-------------------: | :----: |
+| ![][BR]![GWC][]<br />Any Black Rose with Gold Flag | ![RG][]![GWC][]`0000` |  50%   |
 
 * **Secret of the Golden Watering Can**
 
@@ -336,30 +167,7 @@ Gold roses cannot reproduce by themselves by cloning nor breeding, but they can 
 
 Watering cans of any type will not lose their durability when watering only tiles which have already been watered that day. You can exploit this behavior by pre-watering all needed tiles with a regular can first, and then water your desired black roses with the golden watering can for no durability loss. Rain also pre-waters all tiles on your island for the whole day.
 
-# Efficient Flower Cloning
 
-Cloning happens when a flower succeeds in reproducing and has no available partner.
-
-> An available partner is an adjacent flower of the same species which has not already bred during the current daily refresh.
-
-* **Cloning Mechanics**
-
-When a flower clones, a child flower will spawn next to its parent, at buds stage. The child will have the exact same genes as its parent, and thus the same color.
-
-> Cloning is always the best way to get more flowers.
-> Once you have a flower of a color you want, the best way to get more of it is always to clone.
-
-* **Cloning Layouts**
-
-The simplest way to clone a flower is to put it on its own, not touching any other flower of its species. You can add more species to make efficient use of the available space.
-
-| Layout  |                  Single Species                  |                 Multiple Species                 |
-| :-----: | :----------------------------------------------: | :----------------------------------------------: |
-| Cloning | <img class="layout" src="../img/layout/clo1.png" /> | <img class="layout" src="../img/layout/clo2.png" /> |
-
-# Credits
-
-* Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 
 [News]: ../img/icon/Post.png "News"
 [Coin]: ../img/icon/Coin.png "Bells"
