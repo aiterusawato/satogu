@@ -3,6 +3,8 @@ title: Flower Genotypes
 layout: acnh
 ---
 
+This is the genotype-to-phenotype correspondence table I datamined from the game.
+
 <div class = "table-wrapper" markdown="block">
 
 |  G1  |  G2  |  G3  | Rose<br />G4 = 0 | Rose<br />G4 = 1 | Rose<br />G4 = 2 |   Tulip   |   Pansy   |  Cosmos   |   Lily    | Hyacinth  | Windflower |    Mum    |
