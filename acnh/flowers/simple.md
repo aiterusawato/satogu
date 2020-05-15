@@ -8,17 +8,21 @@ Learn the basics of flower mechanics and obtain all the flowers you want easily.
 
 * Contents
 {:toc}
-# Simple Farming Steps
+# Simple Farming Instructions
 
-Even though the flower mechanics can be very deep, you can farm all the flowers you want easily and efficiently by following these very simple steps and rules.
+Even though the flower mechanics are very deep, you can farm all the flowers you want easily and efficiently by following these very simple instructions.
+
+## Farming Summary
+
+You have to start with flowers coming from seeds or mystery islands to ensure they have the right genes. Breed them together to get new colors, and once you get a new flower with a color you want, just clone it again and again.
 
 | Step | Instructions                                                 |
 | :--: | ------------------------------------------------------------ |
-| 1<br />![SW][] | Grow new flowers from seeds or bring wild flowers from mystery islands<br />→ Once you can see the flower's color, it will be able to reproduce |
-| 2<br />![](../img/exp/Love.png) | Put your flowers in [breeding fields](#simple-breeding-fields) to get new colors<br />→ Follow the breeding combinations and layouts shown in this guide |
-| 3<br />![](../img/exp/BrokenHeart.png) | Put your flowers in [cloning fields](#simple-cloning-fields) to get same color<br />→ Follow the cloning layouts shown in this guide |
-| 4<br />![BP][] | Have your flowers hydrated once a day by watering can or rain<br />→ Once the flower is sparkling, it's hydrated and will have a chance to reproduce |
-| 5<br />![](../img/exp/Greeting.png) | Have up to five visitors water your flowers to speed up the process<br />→ Visitor watering will increase the reproduction chance for this day |
+| 1<br />![SW][] | Grow new flowers from seeds or bring wild flowers from mystery islands<br />→ Once the flower is grown enough, it will be able to reproduce<br />→ Visual tip : if the flower's color is visible, it's grown enough |
+| 2<br />![Shovel][] | Put your flowers in [breeding fields](#simple-breeding-fields) to get new colors<br />→ Follow the breeding combinations and layouts shown in this guide |
+| 3<br />![Shovel][] | Once you get a flower with the color you want, put it in a [cloning field](#simple-cloning-fields)<br />→ Follow the cloning layouts shown in this guide |
+| 4<br />![BP][] | Have your flowers hydrated once a day by watering can or rain<br />→ Once the flower is hydrated and will have a chance to reproduce<br />→ Visual tip : if the flower is making small sparkles, it's hydrated |
+| 5<br />![BP][] | Have up to five visitors water your flowers to speed up the process<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Visual tip : if the flower is making big sparkles, it's watered by five visitors |
 
 ## Daily Farming Routine
 
@@ -27,28 +31,32 @@ Every day at 5:00 AM, the daily refresh takes place. Flowers will grow, and grow
 | Step | Instructions                                                 |
 | :--: | ------------------------------------------------------------ |
 | 1<br />![](../img/exp/HappyFlower.png) | After 5:00 AM : Check your farming fields |
-| 2<br />![](../img/exp/Nodding.png) | Dig up the new children<br />→ Move to another breeding field if needed<br />→ Move to cloning field if you want more<br />→ Discard if you don't want it |
-| 3<br />![](../img/exp/Thinking.png) | Optional : Update your farming fields<br />→ Make sure everything is in its right place before inviting watering visitors |
-| 4<br />![](../img/exp/Greeting.png) | Optional : Have up to five visitors water your farming fields<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Don't move your flowers after this or their bonus will be reset |
-| 5<br />![](../img/exp/Sleepy.png) | Before 5:00 AM : Water the farming fields<br />→ Not needed if you had watering visitors or if it has rained<br />→ Keep this task for the end of the day in case it rains |
+| 2<br />![Shovel][] | Dig the new children up and move them away<br />→ Move to a breeding field if you need them for a recipe<br />→ Move to a cloning field if you want more of them<br />→ Get rid of them if you have no use for them |
+| 3<br />![Shovel][] | Optional : Update your farming fields if needed<br />→ Make sure everything is in its right place before inviting watering visitors |
+| 4<br />![IWC][] | Optional : Have up to five visitors water your farming fields<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Don't move your flowers after this or their bonus will be reset |
+| 5<br />![IWC][] | Before 5:00 AM : Water the farming fields<br />→ Not needed if it has rained or you had watering visitors<br />→ Keep this task for the end of the day in case it rains or you have visitors |
 
 # Simple Breeding Fields
 
+Use breeding to get new colors. If you already have a flower of the color you want, it's always better to clone it instead of breeding it.
+
+When breeding, the two parent flowers will mix their genes and give birth to a new child flower, which may have different genes and colors from its parents.
+
 The simplest way to breed two flowers is to put them next to each other as an isolated pair, not touching any other flower of their species. You can add another species in between pairs to make efficient use of the available space.
 
-|               Single Species Breeding               |              Multiple Species Breeding              |
-| :-------------------------------------------------: | :-------------------------------------------------: |
-| <img class="layout" src="../img/layout/iso1.png" /> | <img class="layout" src="../img/layout/iso2.png" /> |
+|                  Single Species Breeding                   |                 Multiple Species Breeding                  |
+| :--------------------------------------------------------: | :--------------------------------------------------------: |
+| <img class="layout" src="../img/LayoutSimpleBreed1.png" /> | <img class="layout" src="../img/LayoutSimpleBreed2.png" /> |
 
-There are a lot of different flower combinations, with each one having multiple possible outcomes. The combinations shown in this guide are balanced to be both simple and effective.
+# Simple Breeding Combinations
 
-Make sure to follow these very important rules when breeding.
+There are a lot of possible flower combinations, with each one having multiple possible outcomes. The recipes shown in this guide are balanced to be both simple and effective. Just make sure to follow these very important rules when breeding.
 
 |                Rule                 | Instruction                                                  |
 | :---------------------------------: | ------------------------------------------------------------ |
-|   1<br />![](../img/exp/Love.png)   | Always use the proper parents<br />→ Parent flowers have an icon telling you were they must come from<br />→ In the case of bred flowers, pay attention to the numbers |
-| 2<br />![](../img/exp/Nodding.png)  | Always dig up the new children and move them away            |
-| 3<br />![](../img/exp/Negative.png) | Never use the new children for breeding unless otherwise specified |
+|   1<br />![](../img/exp/Love.png)   | Always use the proper parents<br />![SW][]→ Parent from seeds or mystery islands<br />![NM][]→ Parent from mystery islands, some can be obtained from breeding<br />![IWC][]→ Parent from breeding, must have the right numbers |
+| 2<br />![](../img/exp/Nodding.png)  | Always dig the new children up and move them away            |
+| 3<br />![](../img/exp/Negative.png) | Never use the new children for breeding unless they appear in another recipe |
 
 ## Lilies
 
@@ -137,11 +145,15 @@ Make sure to follow these very important rules when breeding.
 
 # Simple Cloning Fields
 
+Use cloning to multiply the flowers you already have.
+
+When cloning, the parent flower will replicate its genes and give birth to a new child flower, which will have the same genes and color as its parent.
+
 The simplest way to clone a flower is to put it on its own, not touching any other flower of its species. You can add more species to make efficient use of the available space.
 
-|               Single Species Cloning                |              Multiple Species Cloning               |
-| :-------------------------------------------------: | :-------------------------------------------------: |
-| <img class="layout" src="../img/layout/clo1.png" /> | <img class="layout" src="../img/layout/clo2.png" /> |
+|                   Single Species Cloning                   |                  Multiple Species Cloning                  |
+| :--------------------------------------------------------: | :--------------------------------------------------------: |
+| <img class="layout" src="../img/LayoutSimpleClone1.png" /> | <img class="layout" src="../img/LayoutSimpleClone2.png" /> |
 
 # Gold Roses
 
@@ -171,6 +183,7 @@ Watering cans of any type will not lose their durability when watering only tile
 
 [News]: ../img/icon/Post.png "News"
 [Coin]: ../img/icon/Coin.png "Bells"
+[Shovel]: ../img/icon/Shovel.png "Shovel"
 [ST1]: ../img/svg/FlwStg1.svg "Sprouts"
 [ST2]: ../img/svg/FlwStg2.svg "Stems"
 [ST3]: ../img/svg/FlwStg3.svg "Buds"
