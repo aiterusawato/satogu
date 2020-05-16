@@ -7,7 +7,7 @@ layout: acnh
 {:toc}
 # This Guide
 
-> ###### I had [Flower A] and [Flower B] make [Flower C], why is this combination not in your guide ?
+> I had [Flower A] and [Flower B] make [Flower C], why is this combination not in your guide ?
 
 Because listing every possible combination is not the point of the guide.
 
@@ -15,17 +15,17 @@ There are 12,393 different flower combinations, and most of them have multiple p
 
 # Other Guides
 
-> ###### Is [X] flower guide accurate ?
+> Is [X] flower guide accurate ?
 
 If it mentions genes, it's most likely accurate.
 
 If it doesn't mention genes, it's most likely inaccurate.
 
-> ###### Is the Official Companion Guide Book's flower guide accurate ?
+> Is the Official Companion Guide Book's flower guide accurate ?
 
 No.
 
-> ###### [X] flower guide worked for me, why are you saying it's inaccurate ?
+> [X] flower guide worked for me, why are you saying it's inaccurate ?
 
 Because it is.
 
@@ -33,7 +33,7 @@ Inaccurate does not mean that a guide will never work. It means that color combi
 
 You tried a particular color combination using flowers which happened to have the right genes, and you got the expected result, that's great, you got lucky. But other people trying the exact same color combination using flowers which happen to have the wrong genes, will never get the expected result.
 
-> ###### What do you mean by "inaccurate" ?
+> What do you mean by "inaccurate" ?
 
 Any guide not taking genes into account will be inaccurate, because flower breeding works with genes, not colors, and a flower's color doesn't determine its genes. For example,  there are 13 different versions of red roses, which all have different breeding outcomes.
 
@@ -52,24 +52,23 @@ Some people got green mums from a specific version of purple mums, and thus infe
 
 # Reproduction
 
-> ###### How to get hybrids ?
+> How to get hybrids ?
 
 Hybrid is a loosely term with no useful meaning in this context.
 
 If what you want is producing non-base color flowers, please follow the [Simple Flower Guide](https://aiterusawato.github.io/satogu/acnh/flowers/simple.html).
 
-> ###### I had [Flower A] and [Flower B] make [Flower C], is this normal ?
+> I had [Flower A] and [Flower B] make [Flower C], is this normal ?
 
 Yes.
 
 This is how flower breeding works.
 
-> ###### Can this flower clone ?
->
+> Can this flower clone ?
 
 All flowers can clone except for gold rose and lily of the valley.
 
-> ###### Does moving a flower affects reproduction rates ?
+> Does moving a flower affects reproduction rates ?
 
 Yes.
 
@@ -77,44 +76,25 @@ Digging up a flower will clear both its water and visitor counters, which means 
 
 # Watering
 
-> ###### Do I need to water flowers if it has rained during this day ?
->
+> Do I need to water flowers if it they have already been watered or if it has rained during this day ?
 
 No.
 
-Watering flowers is for hydrating them. Once they have been hydrated during the current day, there is no point in hydrating them again.
+Watering flowers is for hydrating them. Once they have been hydrated during the current day, there is no point in you hydrating them again.
 
-> ###### Do I need to water flowers which have already been watered during this day ?
->
-
-No.
-
-Watering flowers is for hydrating them. Once they have been hydrated during the current day, there is no point in hydrating them again.
-
-> ###### Does water from local islanders count as visitor watering ?
->
+> Does water from local islanders / local islanders / rain count as visitor watering ?
 
 No.
 
-Visitors are people who visit. Local islanders are not visiting.
+Visitors are people who visit. 
 
-> ###### Does water from local villagers count as visitor watering ?
->
-
-No.
-
-Visitors are people who visit. Local villagers are not visiting. 
-
-> ###### Does rain count as visitor watering ?
->
-
-No.
-
-Visitors are people who visit. Rain is not people.
+* Local islanders are not visiting.
+* Local villagers are not visiting.
+* Rain is not people.
 
 # Gold Rose
 
-> ###### How to get a gold rose ?
+> How to get a gold rose ?
 
 Have a black rose directly watered by a golden watering can.
 
@@ -122,20 +102,17 @@ The golden watering can waters a three-by-three area, and if a black rose is on 
 
 A black rose will keep its gold flag until producing a gold rose, even when moved or given to another player.
 
-> ###### Does a black rose have to breed in order to produce a gold rose ?
->
+> Does a black rose have to breed in order to produce a gold rose ?
 
 No.
 
  When a black rose with the gold flag reproduces, it will have 50% chance of consuming its gold flag to produce a gold rose instead of regular offspring, regardless of the reproduction mode (cloning or breeding).
 
-> ###### Can gold roses clone ?
->
+> Can gold roses clone ?
 
 No.
 
-> ###### Can regular watering cans or rain produce gold roses ?
->
+> Can regular watering cans or rain produce gold roses ?
 
 No.
 
@@ -143,23 +120,23 @@ If you get a gold rose from a black rose watered by a regular can or by rain, it
 
 # Lily of the Valley
 
-> ###### What is lily of the valley ?
+> What is lily of the valley ?
 
 Lily of the valley is a special flower.
 
 It cannot reproduce, plucked or trampled, and has no known effect.
 
-> ###### How to get a lily of the valley ?
+> How to get a lily of the valley ?
 
 Have your island reach a five-star rating and wait.
 
 As long as your island has a five-star rating, lilies of the valley will have a chance to spawn in front of your island's cliffs during the daily refresh.
 
-> ###### Can lilies of the valley breed / clone ?
+> Can lilies of the valley breed / clone ?
 
 No.
 
-> ###### Does lily of the valley have any special effect ?
+> Does lily of the valley have any special effect ?
 
 Not as far as we know.
 
