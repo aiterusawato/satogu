@@ -9,9 +9,9 @@ layout: acnh
 {:toc}
 # Credits
 
-* Daily Refresh Algorithm & Flower Calendar datamined by [Ninji](https://twitter.com/_Ninji)
+* Daily Refresh Algorithm datamined by [Ninji](https://twitter.com/_Ninji)
 * Flower Heredity datamined by [Aeter](https://twitter.com/aiterusawato)
-* Flower Attributes datamined by Psi & Aeter
+* Flower Data datamined by Psi & Aeter
 * Reproduction flowchart courtesy of [Aeon](https://twitter.com/AeonSake)
 * Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 
@@ -29,22 +29,34 @@ When flowers are watered, they will have a chance to reproduce on the next day, 
 
 # Flower Data
 
-Every flower's apparence, growing and reproducing behavior is determined by the information stored in its internal data.
-
 <img class="repalg" src="../img/DataFlower.png">
 
-Here are all the relevant fields.
+Every flower's species, colors, growing state and reproducing behavior is determined by the information stored in its internal data, encoded on 64 bits.
 
-|                   Field                    | Format        | Contents                                                     |
-| :----------------------------------------: | ------------- | ------------------------------------------------------------ |
-|    ![Gold Can][]<br />GF<br />Gold Flag    | 1 bit         | Black rose only<br />Determines the flower's ability to produce a gold rose<br />→ Set when watered by a golden watering can<br />→ Reset when a gold rose is produced |
-| ![Can][]<br /><br />HF<br />Hydration Flag | 1 bit         | Hydration state, dry or hydrated<br />Determines the flower's ability to reproduce<br />→ Set when watered by any can or rain *<br />→ Reset on daily refresh or backwards time travel |
-|   ![Visitor][]<br />VM<br />Visitor Map    | 10 bit map    | Each bit corresponds to a row in the watering visitor table, in descending order (10 to 1)<br />Determines the flower's reproduction chance bonus<br />→ Set if watered by corresponding visitor<br />→ Reset on daily refresh or digging up |
-|     ![Time][]<br />WC<br />Water Count     | 5 bit Integer | Number of days without reproducing<br />Determines the flower's base reproduction chance<br />→ Increments on daily reset if hydration flag set<br />→ Reset on reproduction or digging up |
-|      ![Memo][]<br />GN<br />Genotype       | 4 x 2 bits    | Each bit pair corresponds to a gene, in descending order (4 to 1)<br />Determines the flower's children's genotype when breeding<br />→ Fixed when the flower is generated |
-|     ![Book][]<br />ID<br />Identifier      | 16 bits       | Item code identifying<br />Determines the flower's species, color and growth stage<br />→ Fixed when the flower is generated<br />→ In the case of breeding, determined from the parents genotypes |
+> Most of these informations are invisible to the player.
 
-# Life Cycle
+|                 Field                 | Format        | Contents                                                     |
+| :-----------------------------------: | ------------- | ------------------------------------------------------------ |
+|   ![Book][]<br />ID<br />Identifier   | 16 bits       | Internal code of the item<br />Determines the flower's species, color and growth stage<br />→ Fixed when the flower is generated<br />→ Seed, wild or bred : determined by genes<br />→ Cloned : same identifier as the parent<br />Visible to the player |
+|     ![Memo][]<br />GN<br />Genes      | 4 x 2 bits    | Each bit pair corresponds to a gene, in descending order (4 to 1)<br />Determines the flower's children's genes<br />→ Fixed when the flower is generated<br />→ Seed or wild : default genes for this species and color<br />→ Bred : computed from genes of both parents<br />→ Cloned : same genes as the parent<br />Invisible to the player |
+| ![Can][]<br />HF<br />Hydration Flag  | 1 bit         | Hydration state, dry or hydrated<br />Determines if the flower will attempt to reproduce on daily refresh<br />→ Set when watered by a watering can or by rain *<br />→ Reset on daily refresh or backwards time travel<br />Visible to the player : the flower shines with small sparkles if set |
+| ![Gold Can][]<br />GF<br />Gold Flag  | 1 bit         | Black rose only<br />Determines the flower's ability to produce a gold rose<br />→ Set when directly watered by a golden watering can (must the center tile of the 3x3 area)<br />→ Reset when a gold rose is produced<br />Invisible to the player |
+|  ![Time][]<br />WC<br />Water Count   | 5 bit integer | Number of days without reproducing<br />Determines the flower's base reproduction chance<br />→ Increments on daily reset if hydration flag set (caps at 20)<br />→ Reset on reproduction or digging up<br />Invisible to the player |
+| ![Visitor][]<br />VM<br />Visitor Map | 10 bit map    | Each bit corresponds to a row in the watering visitor table, in descending order (10 to 1)<br />Determines the flower's reproduction chance bonus<br />→ Set if watered by corresponding visitor<br />→ Reset on daily refresh or digging up<br />Partially visible to the player : the flower shines with big sparkles if five or more bits are set (cap reached) |
+
+\* Exact mechanics linked to tile hydration
+
+# Flower Sources
+
+Flowers can be obtained from three different sources. Only seed and wild flowers have fixed default genes, shown on the table of [Flower Tiers](https://aiterusawato.github.io/satogu/acnh/flowers/tiers.html).
+
+|          Source           | Details                                                      |
+| :-----------------------: | ------------------------------------------------------------ |
+|     ![SR][]<br />Seed     | Flower seeds can be bought at shops or found in the town bin<br />→ Spawns new sprouts<br />→ Fixed genes for this species and color |
+|     ![NM][]<br />Wild     | Wild flowers are naturally generated when an island is created<br />This includes both the main island and mystery islands<br />→ Always blooms<br />→ Fixed genes for this species and color |
+| ![BP][]<br />Reproduction | Hydrated flowers may reproduce during the daily refresh<br />→ Spawns new buds<br />→ Cloning : same genes as the parent<br />→ Breeding : genes determined from genes of both parents |
+
+# Flower Life Cycle
 
 ## Growth Stages
 
@@ -68,16 +80,16 @@ Flowers can grow and reproduce when the right conditions are met. Like most dail
 
 > The moment you see the daily announcement by Tom Nook or Isabelle, it means the daily refresh has just been completed.
 
-Flowers blooms can also be plucked or trampled. Plucking a flower will revert it to the stems stage, and the player will receive the corrsponding flower item, which can be used as a material in DIY Recipes. Trampling a flower will revert it to buds stage with no additional effect.
+Flowers blooms can also be plucked or trampled. Plucking a flower will revert it to the stems stage, and the player will receive the corresponding flower item, which can be used as a material in DIY Recipes. Trampling a flower will revert it to buds stage with no additional effect.
 
-> When a flower reverts to a previous stage, events will apply according to the new stage, ie the flower will grow again.
+> When a flower reverts to a previous stage, events will apply according to the new stage.
 
 | Event        | Trigger                                                      | Effect                                                       |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Growth       | Daily Refresh<br />1. Sprouts, stems or buds stage<br />2. Not placed on the beach | → Grows to the next stage                                    |
 | Reproduction | Daily Refresh<br />1. Buds or blooms stage<br />2. Not placed on the beach<br />3. Has been hydrated during the day<br />4. Has a valid tile to spawn a child on<br />5. Reproduction roll succeeds | → Breed if partner found<br />→ Clone if no partner found<br />→ Spawns new buds |
 | Plucking     | Picked up by any player (blooms only)                        | → Reverts to stems<br />→ Player receives item               |
-| Trampling    | Runned over by any player (blooms only)                      | → Reverts to buds                                            |
+| Trampling    | Ran over by any player (blooms only)                         | → Reverts to buds                                            |
 
 ## Daily Refresh Algorithm
 
@@ -86,84 +98,21 @@ All flowers are processed during the daily refresh.
 For each flower on the island :
 
 1. If flower not on beach :
-   1. Flower not blooms → Grow
-   2. If flower hydrated :
+   1. Flower are not blooms → Grow
+   2. If hydration flag is set :
       1. → Increment water counter
-      2. Flower valid, buds or blooms, not gold rose or lily of the valley → Roll for reproduction
+      2. Flower is valid, buds or blooms, not gold rose or lily of the valley → Roll for reproduction
       3. Reproduction success → Search for valid tiles
          1. Tile found → Search for valid partners
             1. Partners found → Breed with random valid partner to determine child
             2. Partner not found →  Clone to determine child
-            3. One parent is black rose with gold flag → 50% of making child gold
+            3. One parent is black rose with gold flag set → 50% of making child gold
                1. Child is gold → Reset gold flag of both parents
             4. Spawn child as buds on random valid tile
             5. Reset water counter of parents
             6. Mark parents invalid
 2. Reset hydration flag
-3. Reset visitor flags
-
-# Sources
-
-Flowers can be obtained from three different sources.
-
-|      Source       | Details                                                      |      |
-| :---------------: | ------------------------------------------------------------ | ---- |
-| ![SR][]<br />Seed | Flower seeds can be bought at shops or found in the town bin<br />→ Spawns new sprouts |      |
-| ![NM][]<br />Wild | Wild flowers are naturally generated when an island is created<br />This includes both the main island and mystery islands<br />→ Always blooms |      |
-| ![BP][]<br />Bred | Hydrated flowers may reproduce during the daily refresh<br />→ Spawns new buds |      |
-
-## Flower Calendar
-
-Each month of the year has a pool of monthly available flower species. There is a six-month shift between the two hemispheres.
-
-Timmy and Tommy will always sell one of the monthly species, while Leif will sell two of the non-monthly species.
-
-| Species    | Jan<br />Jul | Feb<br />Aug | Mar<br />Sep | Apr<br />Oct | May<br />Nov | Jun<br />Dec | Jul<br />Jan | Aug<br />Feb | Sep<br />Mar | Oct<br />Apr | Nov<br />May | Dec<br />Jun |
-| ---------- | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
-| Rose       |              |              |              |              |      ✓       |      ✓       |      ✓       |              |              |      ✓       |      ✓       |      ✓       |
-| Tulip      |              |              |      ✓       |      ✓       |      ✓       |      ✓       |              |              |              |              |              |              |
-| Pansy      |      ✓       |      ✓       |      ✓       |      ✓       |              |              |              |              |              |              |      ✓       |      ✓       |
-| Cosmos     |              |              |              |              |              |              |      ✓       |      ✓       |      ✓       |      ✓       |      ✓       |              |
-| Lily       |              |              |              |              |              |      ✓       |      ✓       |      ✓       |      ✓       |              |              |              |
-| Hyacinth   |              |      ✓       |      ✓       |      ✓       |              |              |              |              |              |              |              |              |
-| Windflower |      ✓       |      ✓       |      ✓       |      ✓       |      ✓       |              |              |              |              |              |              |      ✓       |
-| Mum        |      ✓       |              |              |              |              |              |              |      ✓       |      ✓       |      ✓       |      ✓       |      ✓       |
-
-\* First line is the month for Northern Hemisphere, second line is the month for Southern Hemisphere.
-
-## Specialty & Village Flowers
-
-Every island has a specialty flower and a village flower. They are determined when the island is created, based on the main player's birth month and the current month. They will always be two different species, even if the island's creation month and the main player's birth month share common flower species.
-
-* Specialty flower will spawn naturally on the island cliffs on its creation.
-* Village flower will always be sold at the shop.
-* Both will be the only species to appear on mystery islands.
-
-| Official Name    | Unofficial Name               | Determined by             | Found on                                             |
-| ---------------- | ----------------------------- | ------------------------- | ---------------------------------------------------- |
-| Specialty Flower | Main Flower                   | Main Player's Birth Month | Main Island<br />Mystery Islands<br />Nooklings Shop |
-| Village Flower   | Sub Flower<br />Sister Flower | Island's Creation Month   | Mystery Islands<br />Nooklings Shop                  |
-
-## Seed Flowers
-
-Base flower seeds can be bought at shops. Flowers grown from them will always have their default genotypes.
-
-* Nook Shop sells your village flower species and another species (specialty or monthly not confirmed).
-* Nook's Cranny also sells a third monthly flower species, different from your specialty and village flowers. It rotates every week on Mondays (not confirmed).
-* Leif sells two flower species randomly chosen from those unavailable during the current month (not confirmed).
-
-## Wild Flowers
-
-Wild flowers are naturally generated when an island is created. They will always have their default genotype.
-
-* Main island will spawn base color specialty flowers on the cliffs upon creation.
-* Mystery islands will spawn base (95%) or tier one (5%) of either specialty or village flowers (50% each).
-
-> ![Warning][]**Main Island Wild Flowers**
->
-> By the time you are able to reach your main island's cliffs, the original wild flowers there might have already reproduced and bred because of rain. In this case, you will not be able to know which ones have their default genotype. Because of this, it is advised to not use any of your original cliff flowers which has adjacent flowers.
->
-> If you want already-grown flowers to use as a quick replacement for seed flowers, you can use wild flowers from mystery islands instead.
+3. Reset visitor map
 
 # Hydration
 
@@ -253,27 +202,6 @@ Each individual gene has a value, which can be represented in various ways.
 | `1`           | `01`         | Low                    |
 | `2`           | `11`         | High                   |
 
-**Genotype Example**
-
-Here are different notations for the genotype of a rose.
-
-| Species | Trinary Genotype | Binary Genotype |
-| :-----: | :--------------: | :-------------: |
-|  Rose   |      `2001`      |   `11000001`    |
-
-Here are this rose's corresponding gene values in different notations.
-
-| Gene   | Trinary Value | Binary Value | Influence on Phenotype |
-| ------ | ------------- | ------------ | ---------------------- |
-| Gene 1 | `2`           | `11`         | High                   |
-| Gene 2 | `0`           | `00`         | None                   |
-| Gene 3 | `0`           | `00`         | None                   |
-| Gene 4 | `1`           | `01`         | Low                    |
-
-By looking at the genotype table for roses, you will see that this corresponds to a red rose.
-
-> This rose's genotype can be read as "high red, mid red brightness", which indeed makes red. However, keep in mind that the there are no known clear rules for translating genotype to phenotype, so just use the genotype table to know what phenotype corresponds to a particular genotype.
-
 ### Breeding Algorithm
 
 When two flowers of the same species breed together, their genotypes combine to create the offspring's genotype.
@@ -287,7 +215,32 @@ The algorithm used to determine the offspring's genotype is based on a real-life
 
 Possible outcomes for the offspring gene may be represented by a simple diagram called Punnett Square.
 
-## Breeding Example
+# Examples
+
+## Flower Data Reading Example
+
+Let's take a look at a particular flower and its data.
+
+|    Identifier     |         Genes         |    Hydration Flag     |        Golden Flag        |    Water Count     |           Visitor Map           |
+| :---------------: | :-------------------: | :-------------------: | :-----------------------: | :----------------: | :-----------------------------: |
+| ![BR][]<br />Rose | ![Memo][]<br />`2020` | ![Can][]<br />`False` | ![Gold Can][]<br />`True` | ![Time][]<br />`4` | ![Visitor][]<br />All : `False` |
+
+Here is how we can interpret this flower's flags.
+
+|              Flag               |     Value     | Meaning                                                      | Consequence                                                  |
+| :-----------------------------: | :-----------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|     ![Memo][]<br />Genotype     |    `2020`     | This flower's genes are :<br/>Gene 1: `2`,<br />Gene 2 : `0`,<br />Gene 3 : `2`,<br />Gene 4 :  `0`.<br /> | For Roses, this genotype corresponds to a Black phenotype.<br />Hence, this Rose is Black. |
+|  ![Time][]<br />Water Counter   |      `4`      | This flower has been watered during 4 days without reproducing. | This flower's base reproduction chance is currently 10%.     |
+|   ![Can][]<br />Regular Water   |    `False`    | This flower has not been watered during the current day.     | When a new day comes, this flower's water counter will not be incremented and the flower will not roll for reproduction |
+| ![Gold Can][]<br />Golden Water |    `True`     | This flower has been watered with a golden can.              | Since this flower is a Black Rose, when it will reproduce, the offspring will have a 50% chance of being a Gold Rose. |
+|    ![Visitor][]Visitor Water    | All : `False` | This flower has not been watered by any of the current day's first 10 visitors. | This flower has no reproduction chance bonus.                |
+
+Some observations :
+
+* This flower's current reproduction chance is 10% (10% base + 0% bonus). However, when it gets watered, then on a new day the water counter will be incremented to `5` just before rolling for reproduction, which will increase the reproduction chance to 15% (15% base + 0% bonus).
+* Since the golden water flag is raised and the regular water flag is not, it means that this flower has been watered by a golden can on a previous day.
+
+## Flower Breeding Example
 
 Let's breed these two flowers.
 
@@ -350,29 +303,6 @@ Let's breed these two flowers.
 |        Parent A         |        Parent B         |                          Offspring                           |             Chance             |
 | :---------------------: | :---------------------: | :----------------------------------------------------------: | :----------------------------: |
 | ![OP][]`111101` (`221`) | ![UP][]`010011` (`102`) | ![OP][]`010101` (`111`)<br />![OP][]`010111` (`112`)<br />![RP][]`110101` (`211`)<br />![LP][]`110111` (`212`) | 25%<br />25%<br />25%<br />25% |
-
-## Example
-
-Let's take a look at a particular flower and its flags.
-
-|      Flower       |       Genotype        |   Water Counter    |     Regular Water     |       Golden Water        |          Visitor Water          |
-| :---------------: | :-------------------: | :----------------: | :-------------------: | :-----------------------: | :-----------------------------: |
-| ![BR][]<br />Rose | ![Memo][]<br />`2020` | ![Time][]<br />`4` | ![Can][]<br />`False` | ![Gold Can][]<br />`True` | ![Visitor][]<br />All : `False` |
-
-Here is how we can interpret this flower's flags.
-
-|              Flag               |     Value     | Meaning                                                      | Consequence                                                  |
-| :-----------------------------: | :-----------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|     ![Memo][]<br />Genotype     |    `2020`     | This flower's genes are :<br/>Gene 1: `2`,<br />Gene 2 : `0`,<br />Gene 3 : `2`,<br />Gene 4 :  `0`.<br /> | For Roses, this genotype corresponds to a Black phenotype.<br />Hence, this Rose is Black. |
-|  ![Time][]<br />Water Counter   |      `4`      | This flower has been watered during 4 days without reproducing. | This flower's base reproduction chance is currently 10%.     |
-|   ![Can][]<br />Regular Water   |    `False`    | This flower has not been watered during the current day.     | When a new day comes, this flower's water counter will not be incremented and the flower will not roll for reproduction |
-| ![Gold Can][]<br />Golden Water |    `True`     | This flower has been watered with a golden can.              | Since this flower is a Black Rose, when it will reproduce, the offspring will have a 50% chance of being a Gold Rose. |
-|    ![Visitor][]Visitor Water    | All : `False` | This flower has not been watered by any of the current day's first 10 visitors. | This flower has no reproduction chance bonus.                |
-
-Some observations :
-
-* This flower's current reproduction chance is 10% (10% base + 0% bonus). However, when it gets watered, then on a new day the water counter will be incremented to `5` just before rolling for reproduction, which will increase the reproduction chance to 15% (15% base + 0% bonus).
-* Since the golden water flag is raised and the regular water flag is not, it means that this flower has been watered by a golden can on a previous day.
 
 # Weeds
 
