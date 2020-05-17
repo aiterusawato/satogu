@@ -7,6 +7,14 @@ layout: acnh
 
 * Contents
 {:toc}
+# Credits
+
+* Daily Refresh Algorithm & Flower Calendar datamined by [Ninji](https://twitter.com/_Ninji)
+* Genotypes datamined by [Aeter](https://twitter.com/aiterusawato)
+* Flower Attributes datamined by Psi & Aeter
+* Reproduction flowchart courtesy of [Aeon](https://twitter.com/AeonSake)
+* Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
+
 # Introduction
 
 Flowers are part of the natural vegetation, along with weeds, bushes and trees. 
@@ -56,7 +64,9 @@ Flowers blooms can also be plucked or trampled. Plucking a flower will revert it
 
 ## Daily Refresh Algorithm
 
-During the daily refresh, for each flower on the island :
+All flowers are processed during the daily refresh.
+
+For each flower on the island :
 
 1. If flower not on beach :
    1. Flower not blooms → Grow
@@ -190,8 +200,6 @@ Flowers watered by five visitors or more will shine big gold sparkles.
 # Reproduction
 
 <img class="repalg" src="../img/repalg.png">
-
-<center>Reproduction Algorithm from <a href="https://gardenscience.ac/">Aeon</a></center>
 
 ## Breeding or Cloning
 
@@ -405,9 +413,7 @@ Every day, weeds have a chance to spread depending on their current growth stage
 | Stage 2      |             10%             |            20%            |
 | Stage 3      |             80%             |           100%            |
 
-# Credits
 
-* Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 
 [News]: ../img/icon/Post.png "News"
 [Coin]: ../img/icon/Coin.png "Bells"
