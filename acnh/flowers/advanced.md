@@ -10,7 +10,7 @@ layout: acnh
 # Credits
 
 * Daily Refresh Algorithm & Flower Calendar datamined by [Ninji](https://twitter.com/_Ninji)
-* Genotypes datamined by [Aeter](https://twitter.com/aiterusawato)
+* Flower Heredity datamined by [Aeter](https://twitter.com/aiterusawato)
 * Flower Attributes datamined by Psi & Aeter
 * Reproduction flowchart courtesy of [Aeon](https://twitter.com/AeonSake)
 * Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
@@ -26,6 +26,23 @@ Flowers exist in various species. Each species has three different basic colors,
 Flowers also have hidden values called genes, which determine their color and their offspring's potential colors. A flower's color is called the phenotype, and the ensemble of its genes are called the genotype.
 
 When flowers are watered, they will have a chance to reproduce on the next day, which will spawn a new flower next to its parent.
+
+# Flower Data
+
+Every flower's apparence, growing and reproducing behavior is determined by the information stored in its internal data.
+
+<img class="repalg" src="../img/DataFlower.png">
+
+Here are all the relevant fields.
+
+|                   Field                    | Format        | Contents                                                     |
+| :----------------------------------------: | ------------- | ------------------------------------------------------------ |
+|    ![Gold Can][]<br />GF<br />Gold Flag    | 1 bit         | Black rose only<br />Determines the flower's ability to produce a gold rose<br />→ Set when watered by a golden watering can<br />→ Reset when a gold rose is produced |
+| ![Can][]<br /><br />HF<br />Hydration Flag | 1 bit         | Hydration state, dry or hydrated<br />Determines the flower's ability to reproduce<br />→ Set when watered by any can or rain *<br />→ Reset on daily refresh or backwards time travel |
+|   ![Visitor][]<br />VM<br />Visitor Map    | 10 bit map    | Each bit corresponds to a row in the watering visitor table, in descending order (10 to 1)<br />Determines the flower's reproduction chance bonus<br />→ Set if watered by corresponding visitor<br />→ Reset on daily refresh or digging up |
+|     ![Time][]<br />WC<br />Water Count     | 5 bit Integer | Number of days without reproducing<br />Determines the flower's base reproduction chance<br />→ Increments on daily reset if hydration flag set<br />→ Reset on reproduction or digging up |
+|      ![Memo][]<br />GN<br />Genotype       | 4 x 2 bits    | Each bit pair corresponds to a gene, in descending order (4 to 1)<br />Determines the flower's children's genotype when breeding<br />→ Fixed when the flower is generated |
+|     ![Book][]<br />ID<br />Identifier      | 16 bits       | Item code identifying<br />Determines the flower's species, color and growth stage<br />→ Fixed when the flower is generated<br />→ In the case of breeding, determined from the parents genotypes |
 
 # Life Cycle
 
@@ -333,25 +350,6 @@ Let's breed these two flowers.
 |        Parent A         |        Parent B         |                          Offspring                           |             Chance             |
 | :---------------------: | :---------------------: | :----------------------------------------------------------: | :----------------------------: |
 | ![OP][]`111101` (`221`) | ![UP][]`010011` (`102`) | ![OP][]`010101` (`111`)<br />![OP][]`010111` (`112`)<br />![RP][]`110101` (`211`)<br />![LP][]`110111` (`212`) | 25%<br />25%<br />25%<br />25% |
-
-# Flags
-
-Flags are hidden information attached to an item.
-
-In the case of flowers, flags hold the flower's genes and various information about its state.
-
-|                    Flag                    | Information                                                  | Function                                                     | Reset                                    |
-| :----------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------- |
-|        ![Gold Can][]<br />Gold Flag        | Raised if the flower was watered with a golden can           | If the flower is a Black Rose :<br/>→ Offspring has 50% chance of being a Gold Rose | If the flower produces a gold rose       |
-|        ![Can][]<br />Hydration Flag        | Raised if the flower was watered that day                    | Daily refresh :<br />→ Increment water counter → Roll for reproduction | Daily refresh                            |
-|        ![Time][]<br />Water Counter        | Number of days the flower was watered without reproducing    | Determines base reproduction chance                          | If the flower reproduces<br />Digging up |
-| ![Visitor][]<br />Watering Visitor Counter | 10 flags referencing the first 10 visitors of the day<br/>Raised if the flower was watered by corresponding visitor | Adds bonus reproduction chance                               | Daily refresh<br/>Digging up             |
-|          ![Memo][]<br />Genotype           | The flower's 4 genetic values                                | Determines the flower's phenotype (color) and possible offspring |                                          |
-
-> ![Book][] Flags : Raised or Reset
->
-> * Raising a flag can be seen as activating it, giving it the boolean value `True`.
-> * Resetting a flag can be seen as deactivating it, giving it the boolean value `False`.
 
 ## Example
 
