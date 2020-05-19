@@ -265,7 +265,7 @@ Let's breed these two flowers.
 
 → Offspring Gene 1 will be either `01` or `11` (50% chance each)
 
-* Punnett Square for Gene 2.
+* Punnett Square for Gene 2
 
 |                    | Parent A gives `1` | Parent A gives `1` |
 | ------------------ | ------------------ | ------------------ |
@@ -274,7 +274,7 @@ Let's breed these two flowers.
 
 → Offspring Gene 2 will be `01` (100% chance)
 
-* Punnett Square for Gene 3.
+* Punnett Square for Gene 3
 
 |                    | Parent A gives `0` | Parent A gives `1` |
 | ------------------ | ------------------ | ------------------ |
@@ -284,6 +284,8 @@ Let's breed these two flowers.
 → Offspring Gene 3 will be either `01` or `11` (50% chance each)
 
 * Total Punnett Square (optional)
+
+<div class = "table-wrapper" markdown="block">
 
 |                                 |  Parent A gives<br />`1`+`1`+`0`   |  Parent A gives<br />`1`+`1`+`1`   |  Parent A gives<br />`1`+`1`+`0`   |  Parent A gives<br />`1`+`1`+`1`   |  Parent A gives<br />`1`+`1`+`0`   |  Parent A gives<br />`1`+`1`+`1`   |  Parent A gives<br />`1`+`1`+`0`   |  Parent A gives<br />`1`+`1`+`1`   |
 | :-----------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: |
@@ -296,6 +298,8 @@ Let's breed these two flowers.
 | Parent B gives<br />`1`+`0`+`1` | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) |
 | Parent B gives<br />`1`+`0`+`1` | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) | ![RP][]<br />`110101`<br />(`211`) | ![LP][]<br />`110111`<br />(`212`) |
 
+</div>
+
 → Offspring genotype will be `010101`, `010111`, `110101` or `110111` (25% chance each).
 
 * Possible outcomes
@@ -303,45 +307,6 @@ Let's breed these two flowers.
 |        Parent A         |        Parent B         |                          Offspring                           |             Chance             |
 | :---------------------: | :---------------------: | :----------------------------------------------------------: | :----------------------------: |
 | ![OP][]`111101` (`221`) | ![UP][]`010011` (`102`) | ![OP][]`010101` (`111`)<br />![OP][]`010111` (`112`)<br />![RP][]`110101` (`211`)<br />![LP][]`110111` (`212`) | 25%<br />25%<br />25%<br />25% |
-
-# Weeds
-
-## Weed Spawning
-
-![Weed][]Weeds spawn naturally on islands, as long as their total population is inferior 150.
-
-Every day, a number of new weeds will spawn depending on the current number of weeds on the island.
-
-| Current Number of Weeds | New Weeds per Day |
-| :---------------------- | :---------------: |
-| 0 - 30                  |         2         |
-| 31 - 149                |         1         |
-| 150                     |         0         |
-
-## Weed Growth
-
-Weeds have three growth stages. When they spawn, they are at the first stage.
-
-Every day, weeds have a chance of growing to their next stage depending on their current stage and their watered state.
-
-| Growth Stage      | Growth Chance, Unwatered | Growth Chance, Watered |
-| :---------------- | :----------------------: | :--------------------: |
-| Stage 1 → Stage 2 |           20%            |          50%           |
-| Stage 2 → Stage 3 |            5%            |          10%           |
-
-## Weed Spreading
-
-Weeds can also spread, spawning new weeds on adjacent empty tiles, additionally to the default weed spawning.
-
-Every day, weeds have a chance to spread depending on their current growth stage and their watered state.
-
-| Growth Stage | Spreading Chance, Unwatered | Spreading Chance, Watered |
-| :----------- | :-------------------------: | :-----------------------: |
-| Stage 1      |             0%              |            5%             |
-| Stage 2      |             10%             |            20%            |
-| Stage 3      |             80%             |           100%            |
-
-
 
 [News]: ../img/icon/Post.png "News"
 [Coin]: ../img/icon/Coin.png "Bells"

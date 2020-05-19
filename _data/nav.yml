@@ -2,7 +2,7 @@ acnh_title: Animal Crossing New Horizons
 acnh_url: /satogu/acnh
 
 acnh:
-  - row: 2
+  - row: 1
     items:
     - title: Flower Tiers
       url: flowers/tiers.html
@@ -13,14 +13,22 @@ acnh:
     - title: Flower Genotypes
       url: flowers/genotypes.html
       img: img/icon/Memo.png
-  - row: 1
+    - title: Flower Calendar
+      url: flowers/calendar.html
+      img: img/icon/Timer.png
+  - row: 2
     items:
     - title: Flower FAQ
       url: flowers/faq.html
       img: img/exp/QuestionMark.png
-    - title: Simple Flower Guide
+    - title: Simple Guide
       url: flowers/simple.html
       img:  img/icon/WC.png
-    - title: Advanced Flower Guide
+    - title: Advanced Guide
       url: flowers/advanced.html
       img: img/icon/GWC.png
+    - title: Weeds
+      url: flowers/weeds.html
+      img: img/icon/Weed.png
+  - row: 3
+    items:
