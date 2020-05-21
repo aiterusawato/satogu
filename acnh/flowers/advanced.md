@@ -12,7 +12,6 @@ layout: acnh
 * Daily Refresh Algorithm datamined by [Ninji](https://twitter.com/_Ninji)
 * Flower Heredity datamined by [Aeter](https://twitter.com/aiterusawato)
 * Flower Data datamined by Psi & Aeter
-* Reproduction flowchart courtesy of [Aeon](https://twitter.com/AeonSake)
 * Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 
 # Introduction
@@ -91,28 +90,9 @@ Flowers blooms can also be plucked or trampled. Plucking a flower will revert it
 | Plucking     | Picked up by any player (blooms only)                        | → Reverts to stems<br />→ Player receives item               |
 | Trampling    | Ran over by any player (blooms only)                         | → Reverts to buds                                            |
 
-## Daily Refresh Algorithm
+## Algorithm
 
-All flowers are processed during the daily refresh.
-
-For each flower on the island :
-
-1. If flower not on beach :
-   1. Flower are not blooms → Grow
-   2. If hydration flag is set :
-      1. → Increment water counter
-      2. Flower is valid, buds or blooms, not gold rose or lily of the valley → Roll for reproduction
-      3. Reproduction success → Search for valid tiles
-         1. Tile found → Search for valid partners
-            1. Partners found → Breed with random valid partner to determine child
-            2. Partner not found →  Clone to determine child
-            3. One parent is black rose with gold flag set → 50% of making child gold
-               1. Child is gold → Reset gold flag of both parents
-            4. Spawn child as buds on random valid tile
-            5. Reset water counter of parents
-            6. Mark parents invalid
-2. Reset hydration flag
-3. Reset visitor map
+<img class="repalg" src="../img/Algorithm.png">
 
 # Hydration
 
@@ -145,29 +125,25 @@ Every flower has a water counter keeping track of the number of days it was wate
 | ...           |           ...            |
 | 20+           |           90%            |
 
-## Visitor Watering Bonus
+## Visitor Counter
 
-Every flower has a watering visitor count keeping track of the number of players from other islands who watered it during the current day, which adds a bonus reproduction chance to the flower for that day.
+Every flower has a watering visitor map, used as a watering visitor counter keeping track of the number of players from other islands who watered it during the current day, which adds a bonus reproduction chance to the flower for that day.
 
 > Watering visitor count is cleared on daily refresh or when the flower is dug up.
 
-Flowers watered by five visitors or more will shine big gold sparkles.
+Flowers watered by five visitors or more will make big gold sparkles.
 
 > Only the 10 first watering visitors of the day will be counted. Visitors who don't water any flower will not count toward this limit.
 
-| Visitor Count | Bonus Reproduction Chance |
-| ------------- | :-----------------------: |
-| 1             |            20%            |
-| 2             |            30%            |
-| 3             |            45%            |
-| 4             |            60%            |
-| 5+            |            75%            |
+| Visitor Counter | Bonus Reproduction Chance |
+| --------------- | :-----------------------: |
+| 1               |            20%            |
+| 2               |            30%            |
+| 3               |            45%            |
+| 4               |            60%            |
+| 5+              |            75%            |
 
 # Reproduction
-
-<img class="repalg" src="../img/repalg.png">
-
-## Breeding or Cloning
 
 When flowers reproduce, they can either breed or clone depending on their surroundings.
 
@@ -176,9 +152,9 @@ When flowers reproduce, they can either breed or clone depending on their surrou
 | Available Partner    | Breeding          | Child of both parents    |
 | No Available Partner | Cloning           | Exact copy of the parent |
 
-# Breeding
+## Breeding
 
-## Genes
+### Genes
 
 Genes are four hidden values attached to each flower. Together, they define the flower's genotype, which determines the flower's phenotype. Only Roses use all four genes, other flower species only use the first three genes.
 
@@ -216,6 +192,8 @@ The algorithm used to determine the offspring's genotype is based on a real-life
 Possible outcomes for the offspring gene may be represented by a simple diagram called Punnett Square.
 
 # Examples
+
+Section to be edited.
 
 ## Flower Data Reading Example
 
