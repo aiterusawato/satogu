@@ -11,7 +11,7 @@ layout: acnh
 
 Because listing every possible combination is not the point of the guide.
 
-There are 12,393 different flower combinations, and most of them have multiple possible outcomes. If you want to see the results of a particular combination, use the [Flower Breeding Simulator](https://gardenscience.ac/).
+There are 11,664 different flower combinations, and most of them have multiple possible outcomes. If you want to see the results of a particular combination, use the [Flower Breeding Simulator](https://gardenscience.ac/).
 
 # Other Guides
 
