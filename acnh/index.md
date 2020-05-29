@@ -6,9 +6,9 @@ layout: acnh
 
 ## Sections
 
-* [Flowers](https://aiterusawato.github.io/satogu/acnh/flowers/)
+* [Flowers](flowers/)
 
-## Links
+## External Links
 
 * [Companion Guide Info Dump](https://docs.google.com/document/d/1-8kQMnmduhraliqCrehaAviG0qlm5BnAb73rPPOf-z0/preview)
 * [Mystery Islands Rates](https://docs.google.com/spreadsheets/d/1w-bDgH5RjkSqvNQ6J5YNvBEqHswATiMB3T2P3cnLCsc/edit#gid=240876288)

@@ -8,27 +8,25 @@
 	width: 25%;
 }
 
-/*
-body {
-	background-image: url("/satogu/acnh/img/background.png");
-}
-*/
 p, blockquote {
 	font-size: 16px;
 	text-align: justify;
 	font-style: normal;
 }
-/*
-.post-title h1 {
-	text-align: center;
-}
-*/
+
 h1, h2, h3 {
 	font-weight: bold;
 }
 
 .post-header {
 	text-align: center;
+	margin: 20px 0;
+}
+
+.post-title {
+	margin: 20px 0;
+	padding: 15px;
+	border: 5px solid #363b4e;
 }
 
 .post-content h1 {
@@ -45,7 +43,7 @@ h1, h2, h3 {
 	font-size: 1.6rem;
 	font-weight: bold;
 	padding: 0 0 5px 20px;
-	margin: 10px 0;
+	margin: 15px 0;
 	border-bottom: #858daa solid 2px;
 }
 
