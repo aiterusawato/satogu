@@ -5,37 +5,38 @@ layout: acnh
 
 This is the genotype-to-phenotype correspondence table I datamined from the game.
 
-<div class = "table-wrapper" markdown="block">
+<div class = "table-wrapper genotypes" markdown="block">
 
-|  G1  |  G2  |  G3  | Rose<br />G4 = 0 | Rose<br />G4 = 1 | Rose<br />G4 = 2 |   Tulip   |   Pansy   |  Cosmos   |   Lily    | Hyacinth  | Windflower |    Mum    |
-| :--: | :--: | :--: | :--------------: | :--------------: | :--------------: | :-------: | :-------: | :-------: | :-------: | :-------: | :--------: | :-------: |
-|  0   |  0   |  0   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW]  | ![WM][WM] |
-|  0   |  0   |  1   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW]  | ![WM][WM] |
-|  0   |  0   |  2   |    ![LR][LR]     |    ![LR][LR]     |    ![LR][LR]     | ![WT][WT] | ![UP][UP] | ![WC][WC] | ![WL][WL] | ![UH][UH] | ![UW][UW]  | ![LM][LM] |
-|  0   |  1   |  0   |    ![YR][YR]     |    ![YR][YR]     |    ![YR][YR]     | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW]  | ![YM][YM] |
-|  0   |  1   |  1   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![WL][WL] | ![YH][YH] | ![OW][OW]  | ![YM][YM] |
-|  0   |  1   |  2   |    ![LR][LR]     |    ![LR][LR]     |    ![LR][LR]     | ![WT][WT] | ![UP][UP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![UW][UW]  | ![WM][WM] |
-|  0   |  2   |  0   |    ![YR][YR]     |    ![YR][YR]     |    ![YR][YR]     | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW]  | ![YM][YM] |
-|  0   |  2   |  1   |    ![YR][YR]     |    ![YR][YR]     |    ![YR][YR]     | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW]  | ![YM][YM] |
-|  0   |  2   |  2   |    ![WR][WR]     |    ![WR][WR]     |    ![WR][WR]     | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![WL][WL] | ![YH][YH] | ![OW][OW]  | ![YM][YM] |
-|  1   |  0   |  0   |    ![RR][RR]     |    ![PR][PR]     |    ![WR][WR]     | ![RT][RT] | ![RP][RP] | ![PC][PC] | ![RL][RL] | ![RH][RH] | ![RW][RW]  | ![PM][PM] |
-|  1   |  0   |  1   |    ![RR][RR]     |    ![PR][PR]     |    ![WR][WR]     | ![PT][PT] | ![RP][RP] | ![PC][PC] | ![PL][PL] | ![PH][PH] | ![RW][RW]  | ![PM][PM] |
-|  1   |  0   |  2   |    ![RR][RR]     |    ![PR][PR]     |    ![LR][LR]     | ![WT][WT] | ![UP][UP] | ![PC][PC] | ![WL][WL] | ![WH][WH] | ![UW][UW]  | ![PM][PM] |
-|  1   |  1   |  0   |    ![OR][OR]     |    ![YR][YR]     |    ![YR][YR]     | ![OT][OT] | ![OP][OP] | ![OC][OC] | ![OL][OL] | ![OH][OH] | ![PW][PW]  | ![YM][YM] |
-|  1   |  1   |  1   |    ![RR][RR]     |    ![PR][PR]     |    ![WR][WR]     | ![YT][YT] | ![OP][OP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![PW][PW]  | ![RM][RM] |
-|  1   |  1   |  2   |    ![RR][RR]     |    ![PR][PR]     |    ![LR][LR]     | ![YT][YT] | ![OP][OP] | ![PC][PC] | ![YL][YL] | ![YH][YH] | ![PW][PW]  | ![PM][PM] |
-|  1   |  2   |  0   |    ![OR][OR]     |    ![YR][YR]     |    ![YR][YR]     | ![OT][OT] | ![YP][YP] | ![OC][OC] | ![OL][OL] | ![OH][OH] | ![OW][OW]  | ![LM][LM] |
-|  1   |  2   |  1   |    ![OR][OR]     |    ![YR][YR]     |    ![YR][YR]     | ![YT][YT] | ![YP][YP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![OW][OW]  | ![LM][LM] |
-|  1   |  2   |  2   |    ![RR][RR]     |    ![PR][PR]     |    ![WR][WR]     | ![YT][YT] | ![YP][YP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![OW][OW]  | ![LM][LM] |
-|  2   |  0   |  0   |    ![BR][BR]     |    ![RR][RR]     |    ![PR][PR]     | ![BT][BT] | ![RP][RP] | ![RC][RC] | ![BL][BL] | ![RH][RH] | ![RW][RW]  | ![RM][RM] |
-|  2   |  0   |  1   |    ![BR][BR]     |    ![RR][RR]     |    ![PR][PR]     | ![RT][RT] | ![RP][RP] | ![RC][RC] | ![RL][RL] | ![RH][RH] | ![RW][RW]  | ![RM][RM] |
-|  2   |  0   |  2   |    ![BR][BR]     |    ![RR][RR]     |    ![PR][PR]     | ![RT][RT] | ![LP][LP] | ![RC][RC] | ![PL][PL] | ![RH][RH] | ![LW][LW]  | ![RM][RM] |
-|  2   |  1   |  0   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![BT][BT] | ![RP][RP] | ![OC][OC] | ![BL][BL] | ![UH][UH] | ![RW][RW]  | ![LM][LM] |
-|  2   |  1   |  1   |    ![RR][RR]     |    ![RR][RR]     |    ![WR][WR]     | ![RT][RT] | ![RP][RP] | ![OC][OC] | ![RL][RL] | ![RH][RH] | ![RW][RW]  | ![LM][LM] |
-|  2   |  1   |  2   |    ![BR][BR]     |    ![RR][RR]     |    ![LR][LR]     | ![RT][RT] | ![LP][LP] | ![RC][RC] | ![PL][PL] | ![RH][RH] | ![LW][LW]  | ![RM][RM] |
-|  2   |  2   |  0   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW]  | ![GM][GM] |
-|  2   |  2   |  1   |    ![OR][OR]     |    ![OR][OR]     |    ![YR][YR]     | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW]  | ![GM][GM] |
-|  2   |  2   |  2   |    ![UR][UR]     |    ![RR][RR]     |    ![WR][WR]     | ![LT][LT] | ![LP][LP] | ![RC][RC] | ![WL][WL] | ![LH][LH] | ![LW][LW]  | ![RM][RM] |
+
+|  G1  |  G2  |  G3  | R<br />G4 = 0 | R<br />G4 = 1 | R<br />G4 = 2 |     T     |     P     |     C     |     L     |     H     |     W     |     M     |
+| :--: | :--: | :--: | :-----------: | :-----------: | :-----------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+|  0   |  0   |  0   |   ![WR][WR]   |   ![WR][WR]   |   ![WR][WR]   | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW] | ![WM][WM] |
+|  0   |  0   |  1   |   ![WR][WR]   |   ![WR][WR]   |   ![WR][WR]   | ![WT][WT] | ![WP][WP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![WW][WW] | ![WM][WM] |
+|  0   |  0   |  2   |   ![LR][LR]   |   ![LR][LR]   |   ![LR][LR]   | ![WT][WT] | ![UP][UP] | ![WC][WC] | ![WL][WL] | ![UH][UH] | ![UW][UW] | ![LM][LM] |
+|  0   |  1   |  0   |   ![YR][YR]   |   ![YR][YR]   |   ![YR][YR]   | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW] | ![YM][YM] |
+|  0   |  1   |  1   |   ![WR][WR]   |   ![WR][WR]   |   ![WR][WR]   | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![WL][WL] | ![YH][YH] | ![OW][OW] | ![YM][YM] |
+|  0   |  1   |  2   |   ![LR][LR]   |   ![LR][LR]   |   ![LR][LR]   | ![WT][WT] | ![UP][UP] | ![WC][WC] | ![WL][WL] | ![WH][WH] | ![UW][UW] | ![WM][WM] |
+|  0   |  2   |  0   |   ![YR][YR]   |   ![YR][YR]   |   ![YR][YR]   | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW] | ![YM][YM] |
+|  0   |  2   |  1   |   ![YR][YR]   |   ![YR][YR]   |   ![YR][YR]   | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![YL][YL] | ![YH][YH] | ![OW][OW] | ![YM][YM] |
+|  0   |  2   |  2   |   ![WR][WR]   |   ![WR][WR]   |   ![WR][WR]   | ![YT][YT] | ![YP][YP] | ![YC][YC] | ![WL][WL] | ![YH][YH] | ![OW][OW] | ![YM][YM] |
+|  1   |  0   |  0   |   ![RR][RR]   |   ![PR][PR]   |   ![WR][WR]   | ![RT][RT] | ![RP][RP] | ![PC][PC] | ![RL][RL] | ![RH][RH] | ![RW][RW] | ![PM][PM] |
+|  1   |  0   |  1   |   ![RR][RR]   |   ![PR][PR]   |   ![WR][WR]   | ![PT][PT] | ![RP][RP] | ![PC][PC] | ![PL][PL] | ![PH][PH] | ![RW][RW] | ![PM][PM] |
+|  1   |  0   |  2   |   ![RR][RR]   |   ![PR][PR]   |   ![LR][LR]   | ![WT][WT] | ![UP][UP] | ![PC][PC] | ![WL][WL] | ![WH][WH] | ![UW][UW] | ![PM][PM] |
+|  1   |  1   |  0   |   ![OR][OR]   |   ![YR][YR]   |   ![YR][YR]   | ![OT][OT] | ![OP][OP] | ![OC][OC] | ![OL][OL] | ![OH][OH] | ![PW][PW] | ![YM][YM] |
+|  1   |  1   |  1   |   ![RR][RR]   |   ![PR][PR]   |   ![WR][WR]   | ![YT][YT] | ![OP][OP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![PW][PW] | ![RM][RM] |
+|  1   |  1   |  2   |   ![RR][RR]   |   ![PR][PR]   |   ![LR][LR]   | ![YT][YT] | ![OP][OP] | ![PC][PC] | ![YL][YL] | ![YH][YH] | ![PW][PW] | ![PM][PM] |
+|  1   |  2   |  0   |   ![OR][OR]   |   ![YR][YR]   |   ![YR][YR]   | ![OT][OT] | ![YP][YP] | ![OC][OC] | ![OL][OL] | ![OH][OH] | ![OW][OW] | ![LM][LM] |
+|  1   |  2   |  1   |   ![OR][OR]   |   ![YR][YR]   |   ![YR][YR]   | ![YT][YT] | ![YP][YP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![OW][OW] | ![LM][LM] |
+|  1   |  2   |  2   |   ![RR][RR]   |   ![PR][PR]   |   ![WR][WR]   | ![YT][YT] | ![YP][YP] | ![OC][OC] | ![YL][YL] | ![YH][YH] | ![OW][OW] | ![LM][LM] |
+|  2   |  0   |  0   |   ![BR][BR]   |   ![RR][RR]   |   ![PR][PR]   | ![BT][BT] | ![RP][RP] | ![RC][RC] | ![BL][BL] | ![RH][RH] | ![RW][RW] | ![RM][RM] |
+|  2   |  0   |  1   |   ![BR][BR]   |   ![RR][RR]   |   ![PR][PR]   | ![RT][RT] | ![RP][RP] | ![RC][RC] | ![RL][RL] | ![RH][RH] | ![RW][RW] | ![RM][RM] |
+|  2   |  0   |  2   |   ![BR][BR]   |   ![RR][RR]   |   ![PR][PR]   | ![RT][RT] | ![LP][LP] | ![RC][RC] | ![PL][PL] | ![RH][RH] | ![LW][LW] | ![RM][RM] |
+|  2   |  1   |  0   |   ![OR][OR]   |   ![OR][OR]   |   ![YR][YR]   | ![BT][BT] | ![RP][RP] | ![OC][OC] | ![BL][BL] | ![UH][UH] | ![RW][RW] | ![LM][LM] |
+|  2   |  1   |  1   |   ![RR][RR]   |   ![RR][RR]   |   ![WR][WR]   | ![RT][RT] | ![RP][RP] | ![OC][OC] | ![RL][RL] | ![RH][RH] | ![RW][RW] | ![LM][LM] |
+|  2   |  1   |  2   |   ![BR][BR]   |   ![RR][RR]   |   ![LR][LR]   | ![RT][RT] | ![LP][LP] | ![RC][RC] | ![PL][PL] | ![RH][RH] | ![LW][LW] | ![RM][RM] |
+|  2   |  2   |  0   |   ![OR][OR]   |   ![OR][OR]   |   ![YR][YR]   | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW] | ![GM][GM] |
+|  2   |  2   |  1   |   ![OR][OR]   |   ![OR][OR]   |   ![YR][YR]   | ![LT][LT] | ![OP][OP] | ![BC][BC] | ![OL][OL] | ![LH][LH] | ![PW][PW] | ![GM][GM] |
+|  2   |  2   |  2   |   ![UR][UR]   |   ![RR][RR]   |   ![WR][WR]   | ![LT][LT] | ![LP][LP] | ![RC][RC] | ![WL][WL] | ![LH][LH] | ![LW][LW] | ![RM][RM] |
 
 </div>
 
