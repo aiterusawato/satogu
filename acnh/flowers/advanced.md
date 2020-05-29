@@ -28,7 +28,50 @@ When flowers are watered, they will have a chance to reproduce on the next day, 
 
 # Flower Data
 
-<img class="repalg" src="../img/DataFlower.png">
+<table class="data-structure">
+<thead>
+  <tr>
+    <th colspan="16">Flower Data</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td colspan="7">Unused</td>
+    <td>GF</td>
+    <td>HF</td>
+    <td colspan="7">VM</td>
+  </tr>
+  <tr>
+    <td colspan="3">VM</td>
+    <td colspan="5">WC</td>
+    <td colspan="8">GN</td>
+  </tr>
+  <tr>
+    <td colspan="16">Unused</td>
+  </tr>
+  <tr>
+    <td colspan="16">ID</td>
+  </tr>
+</tbody>
+</table>
 
 Every flower's species, colors, growing state and reproducing behavior is determined by the information stored in its internal data, encoded on 64 bits.
 
@@ -92,7 +135,9 @@ Flowers blooms can also be plucked or trampled. Plucking a flower will revert it
 
 ## Algorithm
 
-<img class="repalg" src="../img/Algorithm.png">
+*Click to enlarge*
+
+<a href="../img/Algorithm.png" target="_blank"><img class="img-full" src="../img/Algorithm.png"></a>
 
 # Hydration
 
