@@ -1,0 +1,102 @@
+.genotypes table {
+	font-size: 1em;
+}
+
+.genotypes table img {
+	width:	32px;
+	height:	32px;
+}
+
+.genotypes table tr th:nth-child(1),
+.genotypes table tr th:nth-child(2),
+.genotypes table tr th:nth-child(3) {
+	writing-mode: horizontal-tb;
+	min-width: 1px;
+}
+
+.genotypes table tr th {
+	writing-mode: vertical-rl;
+	min-width: 32px;
+	max-width: 32px;
+}
+
+
+/* base colors */
+
+.genotypes table tr:nth-child(2) td:nth-child(4),
+.genotypes table tr:nth-child(2) td:nth-child(7),
+.genotypes table tr:nth-child(2) td:nth-child(8),
+.genotypes table tr:nth-child(2) td:nth-child(9),
+.genotypes table tr:nth-child(3) td:nth-child(10),
+.genotypes table tr:nth-child(2) td:nth-child(11),
+.genotypes table tr:nth-child(2) td:nth-child(12),
+.genotypes table tr:nth-child(2) td:nth-child(13) {
+	background-color: lightgray;
+}
+
+.genotypes table tr:nth-child(7) td:nth-child(4),
+.genotypes table tr:nth-child(7) td:nth-child(7),
+.genotypes table tr:nth-child(7) td:nth-child(8),
+.genotypes table tr:nth-child(8) td:nth-child(9),
+.genotypes table tr:nth-child(7) td:nth-child(10),
+.genotypes table tr:nth-child(7) td:nth-child(11),
+.genotypes table tr:nth-child(7) td:nth-child(13) {
+	background-color: #ffffba;
+}
+
+.genotypes table tr:nth-child(7) td:nth-child(12) {
+	background-color: #ffb380;
+}
+
+
+.genotypes table tr:nth-child(19) td:nth-child(5),
+.genotypes table tr:nth-child(20) td:nth-child(7),
+.genotypes table tr:nth-child(19) td:nth-child(8),
+.genotypes table tr:nth-child(19) td:nth-child(9),
+.genotypes table tr:nth-child(20) td:nth-child(10),
+.genotypes table tr:nth-child(20) td:nth-child(11),
+.genotypes table tr:nth-child(19) td:nth-child(12),
+.genotypes table tr:nth-child(19) td:nth-child(13) {
+	background-color: #ff8080;
+}
+
+/* evolved colors */
+
+/* orange */
+.genotypes table tr:nth-child(26) td:nth-child(5),
+.genotypes table tr:nth-child(16) td:nth-child(7),
+.genotypes table tr:nth-child(26) td:nth-child(8),
+.genotypes table tr:nth-child(23) td:nth-child(9),
+.genotypes table tr:nth-child(26) td:nth-child(10),
+.genotypes table tr:nth-child(16) td:nth-child(11) {
+	background-color: #ffb380;
+}
+
+/* pink */
+.genotypes table tr:nth-child(21) td:nth-child(6),
+.genotypes table tr:nth-child(11) td:nth-child(7),
+.genotypes table tr:nth-child(15) td:nth-child(9),
+.genotypes table tr:nth-child(24) td:nth-child(10),
+.genotypes table tr:nth-child(11) td:nth-child(11),
+.genotypes table tr:nth-child(26) td:nth-child(12),
+.genotypes table tr:nth-child(15) td:nth-child(13) {
+	background-color: #ffc8f2;
+}
+
+/* blue */
+.genotypes table tr:nth-child(12) td:nth-child(8),
+.genotypes table tr:nth-child(22) td:nth-child(11),
+.genotypes table tr:nth-child(12) td:nth-child(12) {
+	background-color: #bae1ff;
+}
+
+/* black */
+.genotypes table tr:nth-child(22) td:nth-child(7),
+.genotypes table tr:nth-child(22) td:nth-child(10) {
+	background-color: darkgray;
+}
+
+/* purple */
+.genotypes table tr:nth-child(23) td:nth-child(13) {
+	background-color: #efa9fe;
+}
