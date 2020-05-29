@@ -27,9 +27,47 @@ h1, h2, h3 {
 	font-weight: bold;
 }
 
-.post-content h1, .post-content h2 {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.post-header {
+	text-align: center;
+}
+
+.post-content h1 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #363b4e;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.post-content h2 {
+	position: relative;
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding: 0 0 5px 20px;
+	margin: 10px 0;
+	border-bottom: #858daa solid 2px;
+}
+
+.post-content h2:before {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content : '';
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to bottom,#363b4e,#858daa);
+}
+
+.post-content p {
+	font-size: 1rem;
+	padding: 0;
+	margin: 0 0 10px;
+}
+
+.img-full {
+	width: 100%;
+	height: 100%;
 }
 
 img {
@@ -49,14 +87,7 @@ h3 img {
 }
 table {
 	max-width: 100%;
-	/*
-	table-layout:fixed;
-	*/
-	margin-bottom: 15px;
-
-}
-th, td {
-	/*font-size: 0.7em;*/
+	margin: 0;
 }
 
 table img {
@@ -71,10 +102,23 @@ table img {
 	height: auto;
 }
 
-.layout  {
+.layout {
 	border: 2px solid black;
 	width: auto;
 	height: auto;
+}
+
+.data-structure {
+	text-align: center;
+}
+
+.data-structure thead {
+	font-size: 1.4rem;
+}
+
+.data-structure tbody tr:first-child {
+	font-size: 0.7rem;
+	font-weight: bold;
 }
 
 .stage {
@@ -84,6 +128,8 @@ table img {
 
 .table-wrapper {
   overflow-x: scroll;
+  padding: 0;
+  margin: 15px 0;
 }
 
 #markdown-toc::before {
@@ -110,21 +156,25 @@ table img {
     margin-right: auto;
     margin-left: auto;
 }
+
 @media (min-width: 576px) {
     .wrapper {
         max-width: 540px;
     }
 }
+
 @media (min-width: 768px) {
     .wrapper {
         max-width: 720px;
     }
 }
+
 @media (min-width: 992px) {
     .wrapper {
         max-width: 960px;
     }
 }
+
 @media (min-width: 1200px) {
     .wrapper {
         max-width: 1140px;
