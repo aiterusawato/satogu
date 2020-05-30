@@ -46,6 +46,9 @@ plugins:
 sass:
   sass_dir: _sass
 
+kramdown:
+  toc_levels: 2..2
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

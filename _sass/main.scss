@@ -8,13 +8,8 @@
 	width: 25%;
 }
 
-p, blockquote {
-	font-size: 16px;
-	text-align: justify;
-	font-style: normal;
-}
-
 h1, h2, h3 {
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 
@@ -26,10 +21,10 @@ h1, h2, h3 {
 .post-title {
 	margin: 20px 0;
 	padding: 15px;
-	border: 5px solid #363b4e;
+	border: 4px solid #363b4e;
 }
 
-.post-content h1 {
+.post-content h2 {
 	font-size: 1.6rem;
 	font-weight: bold;
 	color: #fff;
@@ -38,7 +33,7 @@ h1, h2, h3 {
 	padding: 10px;
 }
 
-.post-content h2 {
+.post-content h3 {
 	position: relative;
 	font-size: 1.6rem;
 	font-weight: bold;
@@ -47,7 +42,7 @@ h1, h2, h3 {
 	border-bottom: #858daa solid 2px;
 }
 
-.post-content h2:before {
+.post-content h3:before {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -58,9 +53,11 @@ h1, h2, h3 {
 }
 
 .post-content p {
-	font-size: 1rem;
 	padding: 0;
-	margin: 0 0 10px;
+	margin: 10px 0;
+	font-size: 1em;
+	text-align: justify;
+	font-style: normal;
 }
 
 .img-full {
@@ -73,16 +70,6 @@ img {
 	height:32px;
 }
 
-h1 img, h2 img {
-	width:64px;
-	height:64px;
-}
-
-h3 img {
-	width:48px;
-	height:48px;
-
-}
 table {
 	max-width: 100%;
 	margin: 0;
@@ -91,13 +78,6 @@ table {
 table img {
 	width:32px;
 	height:32px;
-}
-
-.repalg {
-	display: block;
-	margin: auto;
-	width: auto;
-	height: auto;
 }
 
 .layout {
@@ -130,21 +110,31 @@ table img {
   margin: 15px 0;
 }
 
+// Add Contents to TOC
 #markdown-toc::before {
     content: "Contents";
     font-weight: bold;
-}
-
-#markdown-toc ul {
-    list-style: decimal;
+    line-height: 2em;
 }
 
 #markdown-toc {
 	margin: auto;
-    border: 1px solid #aaa;
-    padding-left: 2em;
-    list-style: decimal;
+    border: 1px solid #858daa;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    list-style: none;
     display: block;
+}
+
+#markdown-toc li::before {
+	content: '→';
+	margin-right: 0.5em;
+	font-weight: bold;
+}
+
+#markdown-toc li {
+	padding: 2px;
+	border-top: 1px dotted #e2e2e2;
 }
 
 .wrapper {

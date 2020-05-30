@@ -3,13 +3,13 @@ title: Flowers
 layout: acnh
 ---
 
-# External Links
+## External Links
 
-## Datamining
+### Datamining
 
 * [Flower Research Spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vTdwUI4iZE1wdfZv1xdi2qJtldnWS2iiQdjRjKP-4oKoH0R8a07vaVFxZHSwFiDlwzb6gZAE8U5C_vG/pubhtml)
 
-## Visual Guides
+### Visual Guides
 
 * [Yue](https://twitter.com/yuecrossing)'s [Visual Guides](https://yuexr.github.io/acnh/)
   * [General Gardening](https://yuexr.github.io/acnh/garden.html)
@@ -24,17 +24,17 @@ layout: acnh
 * [JMaster](https://twitter.com/GigaRoboid)'s [12x12 All Flowers Layout](https://imgur.com/wjva79k)
 * [Shrub Seasonality](https://i.imgur.com/iMj7EB1.png)
 
-## Text Guides
+### Text Guides
 
 * Backwardsn's [Optimized Hybrid Recipes & Layouts](https://docs.google.com/document/d/1anxm3WwEKyh0_-l_lZIAUETaa_q432Px3griacQ3NcU/preview)
 
-## Tools
+### Tools
 
 * [Aeon](https://twitter.com/AeonSake)'s [Flower Breeding Simulator](https://gardenscience.ac/)
 * Asteriation's [Breeding Path Simulator](https://recipesim.isomorphicbox.com/)
 * [Nubleh](https://twitter.com/nubleh)'s [Flower Planner](https://nubleh.github.io/flowerplanner/)
 
-## Community
+### Community
 
 * [ACNH Discord](https://discord.gg/acnh)
 * [Visitor Watering Group](https://tinyurl.com/y8srt9vp)

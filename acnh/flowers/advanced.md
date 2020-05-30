@@ -3,18 +3,16 @@ title: Flower Advanced Guide
 layout: acnh
 ---
 
-
-
 * Contents
 {:toc}
-# Credits
+## Credits
 
 * Daily Refresh Algorithm datamined by [Ninji](https://twitter.com/_Ninji)
 * Flower Heredity datamined by [Aeter](https://twitter.com/aiterusawato)
 * Flower Data datamined by Psi & Aeter
 * Flower Stages .svg images courtesy of [Kamirose](https://twitter.com/kamirose)
 
-# Introduction
+## Introduction
 
 Flowers are part of the natural vegetation, along with weeds, bushes and trees. 
 
@@ -26,7 +24,7 @@ Flowers also have hidden values called genes, which determine their color and th
 
 When flowers are watered, they will have a chance to reproduce on the next day, which will spawn a new flower next to its parent.
 
-# Flower Data
+## Flower Data
 
 <table class="data-structure">
 <thead>
@@ -88,7 +86,7 @@ Every flower's species, colors, growing state and reproducing behavior is determ
 
 \* Exact mechanics linked to tile hydration
 
-# Flower Sources
+## Flower Sources
 
 Flowers can be obtained from three different sources. Only seed and wild flowers have fixed default genes, shown on the table of [Flower Tiers](https://aiterusawato.github.io/satogu/acnh/flowers/tiers.html).
 
@@ -98,9 +96,9 @@ Flowers can be obtained from three different sources. Only seed and wild flowers
 |     ![NM][]<br />Wild     | Wild flowers are naturally generated when an island is created<br />This includes both the main island and mystery islands<br />→ Always blooms<br />→ Fixed genes for this species and color |
 | ![BP][]<br />Reproduction | Hydrated flowers may reproduce during the daily refresh<br />→ Spawns new buds<br />→ Cloning : same genes as the parent<br />→ Breeding : genes determined from genes of both parents |
 
-# Flower Life Cycle
+## Flower Life Cycle
 
-## Growth Stages
+### Growth Stages
 
 Flowers have four growth stages, which determine if they can grow, reproduce, be plucked or be trampled.
 
@@ -116,7 +114,7 @@ Flowers have four growth stages, which determine if they can grow, reproduce, be
 | Can be Plucked  |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
 | Can be Trampled |                              ✗                               |                              ✗                               |                              ✗                               |                              ✓                               |
 
-## Events
+### Events
 
 Flowers can grow and reproduce when the right conditions are met. Like most daily events, flower growth and reproduction is processed during the daily refresh, which happens when you open the game for the first time of the day after 5:00 AM.
 
@@ -133,13 +131,13 @@ Flowers blooms can also be plucked or trampled. Plucking a flower will revert it
 | Plucking     | Picked up by any player (blooms only)                        | → Reverts to stems<br />→ Player receives item               |
 | Trampling    | Ran over by any player (blooms only)                         | → Reverts to buds                                            |
 
-## Algorithm
+### Algorithm
 
 *Click to enlarge*
 
 <a href="../img/Algorithm.png" target="_blank"><img class="img-full" src="../img/Algorithm.png"></a>
 
-# Hydration
+## Hydration
 
 Flowers will be considered hydrated for the day as soon as any player or villager uses a watering can on them, or if it has rained during the day. Hydrated flowers will shine small silver sparkles.
 
@@ -155,7 +153,7 @@ Flowers will be considered hydrated for the day as soon as any player or village
 | Rain                                               | Hydrated for the day                                         |
 | Player with Golden Watering Can                    | Hydrated for the day<br />Gold Flag on Black Rose on the center tile until it produces a Gold Rose |
 
-## Water Counter
+### Water Counter
 
 Every flower has a water counter keeping track of the number of days it was watered without reproducing, which determine the flower's base reproduction chance.
 
@@ -170,7 +168,7 @@ Every flower has a water counter keeping track of the number of days it was wate
 | ...           |           ...            |
 | 20+           |           90%            |
 
-## Visitor Counter
+### Visitor Counter
 
 Every flower has a watering visitor map, used as a watering visitor counter keeping track of the number of players from other islands who watered it during the current day, which adds a bonus reproduction chance to the flower for that day.
 
@@ -188,7 +186,7 @@ Flowers watered by five visitors or more will make big gold sparkles.
 | 4               |            60%            |
 | 5+              |            75%            |
 
-# Reproduction
+## Reproduction
 
 When flowers reproduce, they can either breed or clone depending on their surroundings.
 
@@ -196,8 +194,6 @@ When flowers reproduce, they can either breed or clone depending on their surrou
 | -------------------- | ----------------- | ------------------------ |
 | Available Partner    | Breeding          | Child of both parents    |
 | No Available Partner | Cloning           | Exact copy of the parent |
-
-## Breeding
 
 ### Genes
 
@@ -236,11 +232,11 @@ The algorithm used to determine the offspring's genotype is based on a real-life
 
 Possible outcomes for the offspring gene may be represented by a simple diagram called Punnett Square.
 
-# Examples
+## Examples
 
 Section to be edited.
 
-## Flower Data Reading Example
+### Flower Data Reading Example
 
 Let's take a look at a particular flower and its data.
 
@@ -263,7 +259,7 @@ Some observations :
 * This flower's current reproduction chance is 10% (10% base + 0% bonus). However, when it gets watered, then on a new day the water counter will be incremented to `5` just before rolling for reproduction, which will increase the reproduction chance to 15% (15% base + 0% bonus).
 * Since the golden water flag is raised and the regular water flag is not, it means that this flower has been watered by a golden can on a previous day.
 
-## Flower Breeding Example
+### Flower Breeding Example
 
 Let's breed these two flowers.
 

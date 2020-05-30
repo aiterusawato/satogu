@@ -8,6 +8,7 @@ Each month of the year has a pool of monthly available flower species. There is 
 Timmy and Tommy will always sell one of the monthly species, while Leif will sell two of the non-monthly species.
 
 <div class = "table-wrapper" markdown="block">
+
 | Species    | Jan<br />Jul | Feb<br />Aug | Mar<br />Sep | Apr<br />Oct | May<br />Nov | Jun<br />Dec | Jul<br />Jan | Aug<br />Feb | Sep<br />Mar | Oct<br />Apr | Nov<br />May | Dec<br />Jun |
 | ---------- | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: | :----------: |
 | Rose       |              |              |              |              |      ✓       |      ✓       |      ✓       |              |              |      ✓       |      ✓       |      ✓       |
@@ -19,11 +20,12 @@ Timmy and Tommy will always sell one of the monthly species, while Leif will sel
 | Windflower |      ✓       |      ✓       |      ✓       |      ✓       |      ✓       |              |              |              |              |              |              |      ✓       |
 | Mum        |      ✓       |              |              |              |              |              |              |      ✓       |      ✓       |      ✓       |      ✓       |      ✓       |
 
+
 </div>
 
 \* First line is the month for Northern Hemisphere, second line is the month for Southern Hemisphere.
 
-# Specialty & Village Flowers
+## Specialty & Village Flowers
 
 | Flower Species                          | Determined by             | Found on                                                     |
 | --------------------------------------- | ------------------------- | ------------------------------------------------------------ |
