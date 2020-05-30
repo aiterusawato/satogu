@@ -8,11 +8,11 @@ Learn the basics of flower mechanics and obtain all the flowers you want easily.
 
 * Contents
 {:toc}
-# Simple Farming Instructions
+## Simple Farming Instructions
 
 Even though the flower mechanics are very deep, you can farm all the flowers you want easily and efficiently by following these very simple instructions.
 
-## Farming Summary
+### Farming Summary
 
 You have to start with flowers coming from seeds or mystery islands to ensure they have the right genes. Breed them together to get new colors, and once you get a new flower with a color you want, just clone it again and again.
 
@@ -24,7 +24,7 @@ You have to start with flowers coming from seeds or mystery islands to ensure th
 | 4<br />![BP][] | Have your flowers hydrated once a day by watering can or rain<br />→ Once the flower is hydrated and will have a chance to reproduce<br />→ Visual tip : if the flower is making small sparkles, it's hydrated |
 | 5<br />![BP][] | Have up to five visitors water your flowers to speed up the process<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Visual tip : if the flower is making big sparkles, it's watered by five visitors |
 
-## Daily Farming Routine
+### Daily Farming Routine
 
 Every day at 5:00 AM, the daily refresh takes place. Flowers will grow, and grown flowers which have been hydrated during the day will have a chance to reproduce. Follow this routine every day to farm your flowers efficiently.
 
@@ -36,7 +36,7 @@ Every day at 5:00 AM, the daily refresh takes place. Flowers will grow, and grow
 | 4<br />![IWC][] | Optional : Have up to five visitors water your farming fields<br />→ Visitor watering will increase the reproduction chance for this day<br />→ Don't move your flowers after this or their bonus will be reset |
 | 5<br />![IWC][] | Before 5:00 AM : Water the farming fields<br />→ Not needed if it has rained or you had watering visitors<br />→ Keep this task for the end of the day in case it rains or you have visitors |
 
-# Simple Breeding Fields
+## Simple Breeding Fields
 
 Use breeding to get new colors. If you already have a flower of the color you want, it's always better to clone it instead of breeding it.
 
@@ -48,7 +48,7 @@ The simplest way to breed two flowers is to put them next to each other as an is
 | :--------------------------------------------------------: | :--------------------------------------------------------: |
 | <img class="layout" src="../img/LayoutSimpleBreed1.png" /> | <img class="layout" src="../img/LayoutSimpleBreed2.png" /> |
 
-# Simple Breeding Combinations
+## Simple Breeding Combinations
 
 There are a lot of possible flower combinations, with each one having multiple possible outcomes. The recipes shown in this guide are balanced to be both simple and effective. Just make sure to follow these very important rules when breeding.
 
@@ -58,7 +58,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 | 2<br />![](../img/exp/Nodding.png)  | Always dig the new children up and move them away            |
 | 3<br />![](../img/exp/Negative.png) | Never use the new children for breeding unless they appear in another recipe |
 
-## Lilies
+### Lilies
 
 |       Parent        |       Parent        |                    Child                     |    Chance    |
 | :-----------------: | :-----------------: | :------------------------------------------: | :----------: |
@@ -66,7 +66,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 | ![][YL]![SY][]`020` | ![][RL]![SR][]`201` |             ![][OL]![BP][]`110`              |     50%      |
 | ![][RL]![SR][]`201` | ![][RL]![SR][]`201` | ![][BL]![BP][]`200`<br />![][PL]![BP][]`202` | 25%<br />25% |
 
-## Cosmos
+### Cosmos
 
 |                    Parent                    |                    Parent                    |                            Child                             |              Chance               |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :-------------------------------: |
@@ -75,7 +75,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 | ![][OC]![BP][]`110`<br />![OC][]![BP][]`111` | ![][OC]![BP][]`110`<br />![OC][]![BP][]`111` | ![][PC]![BP][]`100`<br />![][PC]![BP][]`101`<br />![][PC]![BP][]`102`<br />![][PC]![BP][]`112`<br />![][BC]![BP][]`220`<br />![BC][]![BP][]`221` | 12.5% ~ 18.75%<br />4.69% ~ 6.25% |
 |             ![][OC]![NM][]`211`              |             ![][OC]![NM][]`211`              |         ![][BC]![BP][]`220`<br />![BC][]![BP][]`221`         |         6.25%<br />12.5%          |
 
-## Hyacinths
+### Hyacinths
 
 |                    Parent                    |                    Parent                    |                            Child                             |                Chance                |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----------------------------------: |
@@ -85,7 +85,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 |             ![][OH]![BP][]`110`              |             ![][OH]![BP][]`110`              | ![][OH]![BP][]`110`<br />![][OH]![NM][]`120`<br />![][UH]![NM][]`210`<br />![][LH]![BP][]`220` | 25%<br />12.5%<br />12.5%<br />6.25% |
 | ![][OH]![NM][]`120`<br />![][UH]![NM][]`210` | ![][OH]![NM][]`120`<br />![][UH]![NM][]`210` |                     ![][LH]![BP][]`220`                      |                 25%                  |
 
-## Tulips
+### Tulips
 
 |                    Parent                    |                    Parent                    |                            Child                             |                     Chance                      |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :---------------------------------------------: |
@@ -96,7 +96,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 |             ![][OT]![BP][]`110`              |             ![][OT]![NM][]`120`              | ![][OT]![BP][]`110`<br />![][OT]![NM][]`120`<br />![][BT]![NM][]`210`<br />![][LT]![BP][]`220` |       25%<br />25%<br />12.5%<br />12.5%        |
 | ![][OT]![NM][]`120`<br />![BT][]![NM][]`210` | ![][OT]![NM][]`120`<br />![BT][]![NM][]`210` |                     ![][LT]![BP][]`220`                      |                       25%                       |
 
-## Pansies
+### Pansies
 
 |                    Parent                    |                    Parent                    |                            Child                             | Chance |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----: |
@@ -104,9 +104,9 @@ There are a lot of possible flower combinations, with each one having multiple p
 |             ![][YP]![SY][]`020`              |             ![][RP]![SR][]`200`              |                     ![][OP]![BP][]`110`                      |  100%  |
 |             ![][UP]![BP][]`002`              |             ![][RP]![SR][]`200`              |                     ![][RP]![BP][]`101`                      |  100%  |
 |             ![][RP]![BP][]`101`              |             ![][RP]![BP][]`101`              |                     ![][LP]![BP][]`202`                      | 6.25%  |
-| ![UP][]![NM][]`102`<br />![][OP]![NM][]`221` | ![NM][]![UP][]`102`<br />![NM][]![][OP]`221` | ![][LP]![BP][]`202`<br />![][LP]![BP][]`212`<br />![][LP]![BP][]`222` |  25%   |
+| ![UP][]![NM][]`102`<br />![][OP]![NM][]`221` | ![UP][]![NM][]`102`<br />![][OP]![NM][]`221` | ![][LP]![BP][]`202`<br />![][LP]![BP][]`212`<br />![][LP]![BP][]`222` |  25%   |
 
-## Windflowers
+### Windflowers
 
 |                    Parent                    |                    Parent                    |                            Child                             | Chance |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :----: |
@@ -114,9 +114,9 @@ There are a lot of possible flower combinations, with each one having multiple p
 |             ![][OW]![SO][]`020`              |             ![RW][]![SR][]`200`              |                     ![][PW]![BP][]`110`                      |  100%  |
 |             ![RW][]![SR][]`200`              |             ![][UW]![BP][]`002`              |                     ![RW][]![BP][]`101`                      |  100%  |
 |             ![RW][]![BP][]`101`              |             ![RW][]![BP][]`101`              |                     ![][LW]![BP][]`202`                      | 6.25%  |
-| ![UW][]![NM][]`102`<br />![][PW]![NM][]`221` | ![NM][]![UW][]`102`<br />![NM][]![][PW]`221` | ![][LW]![BP][]`202`<br />![][LW]![BP][]`212`<br />![][LW]![BP][]`222` |  25%   |
+| ![UW][]![NM][]`102`<br />![][PW]![NM][]`221` | ![UW][]![NM][]`102`<br />![][PW]![NM][]`221` | ![][LW]![BP][]`202`<br />![][LW]![BP][]`212`<br />![][LW]![BP][]`222` |  25%   |
 
-## Mums
+### Mums
 
 |                    Parent                    |                    Parent                    |                            Child                             |              Chance              |
 | :------------------------------------------: | :------------------------------------------: | :----------------------------------------------------------: | :------------------------------: |
@@ -128,7 +128,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 | ![][LM]![BP][]`120`<br />![LM][]![BP][]`210` | ![][LM]![BP][]`120`<br />![LM][]![BP][]`210` | ![][LM]![BP][]`120`<br />![LM][]![BP][]`210`<br />![][GM]![BP][]`220` | ![LM][]50%<br /><br />![GM][]25% |
 |             ![][LM]![NM][]`211`              |             ![][LM]![NM][]`211`              |         ![][GM]![BP][]`220`<br />![GM][]![BP][]`221`         |         6.25%<br />12.5%         |
 
-## Roses
+### Roses
 
 |        Parent        |        Parent        |                     Child                      |      Chance      |
 | :------------------: | :------------------: | :--------------------------------------------: | :--------------: |
@@ -143,7 +143,7 @@ There are a lot of possible flower combinations, with each one having multiple p
 | ![][OR]![NM][]`2211` | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221`<br />![][UR]![BP][]`2220` | 12.5%<br />12.5% |
 | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221` | ![RR][]![BP][]`2221`<br />![][UR]![BP][]`2220` |   50%<br />25%   |
 
-# Simple Cloning Fields
+## Simple Cloning Fields
 
 Use cloning to multiply the flowers you already have.
 
@@ -155,7 +155,7 @@ The simplest way to clone a flower is to put it on its own, not touching any oth
 | :--------------------------------------------------------: | :--------------------------------------------------------: |
 | <img class="layout" src="../img/LayoutSimpleClone1.png" /> | <img class="layout" src="../img/LayoutSimpleClone2.png" /> |
 
-# Gold Roses
+## Gold Roses
 
 Gold roses are special flowers which can only be obtained from breeding or cloning a black rose which has been watered by a golden watering can. 
 
@@ -163,19 +163,19 @@ Gold roses are special flowers which can only be obtained from breeding or cloni
 | :------------------------------------------------: | :-------------------: | :----: |
 | ![][BR]![GWC][]<br />Any Black Rose with Gold Flag | ![RG][]![GWC][]`0000` |  50%   |
 
-* **Secret of the Golden Watering Can**
+### Secret of the Golden Watering Can
 
 The golden watering can waters nine tiles at once in a three by three area, but only the black rose placed in the center tile of that area, just in front of the player, will obtain the gold flag. Because of this, you have to water every single black rose you want to give the gold flag to, one by one.
 
-* **Secret of the Black Rose**
+### Secret of the Black Rose
 
 A black rose with the gold flag will have 50% chance for its child to be a gold rose, either when breeding or cloning. The gold flag will stay on the black rose until it produces a gold rose.
 
-* **Secret of the Gold Rose**
+### Secret of the Gold Rose
 
 Gold roses cannot reproduce by themselves by cloning nor breeding, but they can be chosen as a breeding partner by another adjacent rose. Since their genotype is `0000`, this can create seemingly unsuspected offspring.
 
-* **Golden Watering Can Infinite Durability Trick**
+### Golden Watering Can Infinite Durability Trick
 
 Watering cans of any type will not lose their durability when watering only tiles which have already been watered that day. You can exploit this behavior by pre-watering all needed tiles with a regular can first, and then water your desired black roses with the golden watering can for no durability loss. Rain also pre-waters all tiles on your island for the whole day.
 
