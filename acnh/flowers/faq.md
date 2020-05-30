@@ -5,96 +5,83 @@ layout: acnh
 
 * Contents
 {:toc}
-# This Guide
+## Guides
 
-> I had [Flower A] and [Flower B] make [Flower C], why is this combination not in your guide ?
+### Why are some guides bad ?
 
-Because listing every possible combination is not the point of the guide.
+Because they are based on color, which makes them inaccurate and unreliable.
 
-There are 11,664 different flower combinations, and most of them have multiple possible outcomes. If you want to see the results of a particular combination, use the [Flower Breeding Simulator](https://gardenscience.ac/).
-
-# Other Guides
-
-> Is [X] flower guide accurate ?
-
-If it mentions genes, it's most likely accurate.
-
-If it doesn't mention genes, it's most likely inaccurate.
-
-> Is the Official Companion Guide Book's flower guide accurate ?
-
-No.
-
-> [X] flower guide worked for me, why are you saying it's inaccurate ?
-
-Because it is.
-
-Inaccurate does not mean that a guide will never work. It means that color combinations will never work when flowers don't have the right genes.
-
-You tried a particular color combination using flowers which happened to have the right genes, and you got the expected result, that's great, you got lucky. But other people trying the exact same color combination using flowers which happen to have the wrong genes, will never get the expected result.
-
-> What do you mean by "inaccurate" ?
-
-Any guide not taking genes into account will be inaccurate, because flower breeding works with genes, not colors, and a flower's color doesn't determine its genes. For example,  there are 13 different versions of red roses, which all have different breeding outcomes.
-
-Here is a famous breeding combination you can find in inaccurate guides.
+Breeding is determined by genes, not by colors. Most flowers exist in multiple different versions, which can lead to very different outcomes. Take a look at this infamous breeding combination found in a lot of bad guides.
 
 |        Parent A         |        Parent B         |       Offspring        |
 | :---------------------: | :---------------------: | :--------------------: |
 | ![LM][]<br />Purple Mum | ![LM][]<br />Purple Mum | ![GM][]<br />Green Mum |
 
-While this combination can work in some cases, it does not work with all purple mums.
+This combination will never work if you use purple mums with the genes `002`, which come from white mums. If you happen to use the wrong purple mums, you will never get a green mum, even in a thousand years. Bad guides are full of such wrong color combinations. Color combinations which work anytime regardless of genes are actually extremely few.
 
-* Purple Mums with genes `211`, which come from rare flower islands, can produce green mums.
-* Purple Mums with genes `002`, which come from two white mums, will never be able to produce any green mum.
+### Is this breeding guide good ?
 
-Some people got green mums from a specific version of purple mums, and thus infered "purple mum + purple mum = green mum", which would have been a correct deduction if flower breeding worked with colors, but this is not the case.
+Does it mention genes ? If it does, it's likely good. If it doesn't, it's likely bad.
 
-# Reproduction
+### Is the Official Companion Guide's breeding guide good ?
 
-> How to get hybrids ?
+No. It's actually very bad.
+
+### But this breeding guide worked for me !
+
+Even a broken clock is right twice a day.
+
+You unknowingly used flowers which had the right genes, and it worked for you. Other people may unknowingly use flowers which have wrong genes, and it will never work for them.
+
+Guides which work only for specific people in specific conditions are bad guides.
+
+### I bred a flower in a way not listed in a good guide !
+
+Listing every possible breeding combination is not the point of guides.
+
+There are 11,664 possible breeding combinations, and most of them have multiple possible outcomes. Listing everything would be highly unreadable and unpractical. If you want to see the results of a particular combination, use the [Breeding Simulator](https://gardenscience.ac/).
+
+Good guides only focus on simple combinations, effective combinations, or a balance of both.
+
+## Reproduction
+
+### How to get hybrids ?
 
 Hybrid is a loosely term with no useful meaning in this context.
 
-If what you want is producing non-base color flowers, please follow the [Simple Flower Guide](https://aiterusawato.github.io/satogu/acnh/flowers/simple.html).
+If what you want is non-base color flowers, please follow the [Simple Flower Guide](simple.html) or other [accurate guides](../flowers).
 
-> I had [Flower A] and [Flower B] make [Flower C], is this normal ?
+### I got this flower from breeding, is this normal ?
 
-Yes.
+Yes, most likely. This is how breeding works. If you have a doubt, check the [Breeding Simulator](https://gardenscience.ac/).
 
-This is how flower breeding works.
-
-> Can this flower clone ?
+### Can this flower clone ?
 
 All flowers can clone except for gold rose and lily of the valley.
 
-> Does moving a flower affects reproduction rates ?
+### Does moving a flower affects reproduction rates ?
 
-Yes.
+Yes. Digging up a flower will clear both its water counter and visitor counter, which means its reproduction chance will be reset to the base 5%.
 
-Digging up a flower will clear both its water and visitor counters, which means its reproduction chance will be reset to the base 5%.
+## Watering
 
-# Watering
+### Do I need to water my flowers ?
 
-> Do I need to water flowers if it they have already been watered or if it has rained during this day ?
+If you want them to reproduce and they are not sparkling, yes. Else, no.
 
-No.
+### Does x count as visitor watering ?
 
-Watering flowers is for hydrating them. Once they have been hydrated during the current day, there is no point in you hydrating them again.
+Only watering from visitors count as visitor watering.
 
-> Does water from local islanders / local islanders / rain count as visitor watering ?
+Visitors are people from other islands who visit your island.
 
-No.
+* Your island's residents are not visiting.
+* Your island's villagers are not visiting.
+* Rain and snow are not people.
 
-Visitors are people who visit. 
+## Gold Rose
 
-* Local islanders are not visiting.
-* Local villagers are not visiting.
-* Rain is not people.
-
-# Gold Rose
-
-> How to get a gold rose ?
+### How to get a gold rose ?
 
 Have a black rose directly watered by a golden watering can.
 
@@ -102,41 +89,41 @@ The golden watering can waters a three-by-three area, and if a black rose is on 
 
 A black rose will keep its gold flag until producing a gold rose, even when moved or given to another player.
 
-> Does a black rose have to breed in order to produce a gold rose ?
+### Does a black rose have to breed in order to produce a gold rose ?
 
 No.
 
  When a black rose with the gold flag reproduces, it will have 50% chance of consuming its gold flag to produce a gold rose instead of regular offspring, regardless of the reproduction mode (cloning or breeding).
 
-> Can gold roses clone ?
+### Can gold roses clone ?
 
 No.
 
-> Can regular watering cans or rain produce gold roses ?
+### Can regular watering cans or rain produce gold roses ?
 
 No.
 
 If you get a gold rose from a black rose watered by a regular can or by rain, it's because that black rose already had the gold flag in the first place, which means it had been watered by a golden watering can previously, either by you or by another player. The regular water from regular watering can or rain only triggered the roll for reproduction.
 
-# Lily of the Valley
+## Lily of the Valley
 
-> What is lily of the valley ?
+### What is lily of the valley ?
 
 Lily of the valley is a special flower.
 
 It cannot reproduce, plucked or trampled, and has no known effect.
 
-> How to get a lily of the valley ?
+### How to get a lily of the valley ?
 
 Have your island reach a five-star rating and wait.
 
 As long as your island has a five-star rating, lilies of the valley will have a chance to spawn in front of your island's cliffs during the daily refresh.
 
-> Can lilies of the valley breed / clone ?
+### Can lilies of the valley breed / clone ?
 
 No.
 
-> Does lily of the valley have any special effect ?
+### Does lily of the valley have any special effect ?
 
 Not as far as we know.
 
