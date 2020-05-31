@@ -19,6 +19,7 @@ layout: acnh
 * [Cestislife](https://twitter.com/cestislife)'s [Visual Guides](https://cestislife.github.io/)
   * [Simplest Breeding Paths](https://cestislife.github.io/breeding.png)
   * [Flower Reproduction Guide](https://cestislife.github.io/reproduce.png)
+* [Blue Rose Methods Anthology](https://bit.ly/acnhbluerose)
 * [Nia](https://twitter.com/Nia48573183)'s [Flower Genes Explained](https://imgur.com/a/QX8mFJM)
 * [Peachnkey](https://twitter.com/PeachNKey)'s [39x21 All Flowers Layout](https://i.imgur.com/VQHoob8.png)
 * [JMaster](https://twitter.com/GigaRoboid)'s [12x12 All Flowers Layout](https://imgur.com/wjva79k)
