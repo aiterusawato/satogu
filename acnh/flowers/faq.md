@@ -39,21 +39,61 @@ Guides which work only for specific people in specific conditions are bad guides
 
 Listing every possible breeding combination is not the point of guides.
 
-There are 11,664 possible breeding combinations, and most of them have multiple possible outcomes. Listing everything would be highly unreadable and unpractical. If you want to see the results of a particular combination, use the [Breeding Simulator](https://gardenscience.ac/).
+There are 11,664 possible breeding combinations, and most of them have multiple possible outcomes. Listing everything would be highly unreadable and unpractical. Good guides only focus on simple combinations, effective combinations, or a balance of both.
 
-Good guides only focus on simple combinations, effective combinations, or a balance of both.
+If you want to see the results of a particular combination, use the Breeding Simulator.
+
+<div class = "button-link">
+	<a href="https://gardenscience.ac">Flower Breeding Simulator</a>
+</div>
+
+## Species
+
+### How many flower species are there ?
+
+There are 8 different flower species, not including Lily of the Valley.
+
+### How many flower colors are there ?
+
+There are 10 different flower colors, but every species has only a subset of available colors.
+
+<div class = "button-link">
+	<a href="tiers.html">Flower Tiers</a>
+</div>
+
+### How many flower phenotypes are there ?
+
+There are 53 different flower phenotypes in total, not including Lily of the Valley
+
+<div class = "button-link">
+	<a href="phenotypes.html">Flower Phenotypes</a>
+</div>
+
+### How many flower genotypes are there ?
+
+There are 270 different flower genotypes in total.
+
+<div class = "button-link">
+	<a href="genotypes.html">Flower Genotypes</a>
+</div>
 
 ## Reproduction
 
 ### How to get hybrids ?
 
-Hybrid is a loosely term with no useful meaning in this context.
+If you want non-base flowers, follow the simple guide.
 
-If what you want is non-base color flowers, please follow the [Simple Flower Guide](simple.html) or other [accurate guides](../flowers).
+<div class = "button-link">
+	<a href="simple.html">Simple Flower Guide</a>
+</div>
 
 ### I got this flower from breeding, is this normal ?
 
-Yes, most likely. This is how breeding works. If you have a doubt, check the [Breeding Simulator](https://gardenscience.ac/).
+Yes, most likely. If you have a doubt, check the Breeding Simulator.
+
+<div class = "button-link">
+	<a href="https://gardenscience.ac">Flower Breeding Simulator</a>
+</div>
 
 ### Can this flower clone ?
 

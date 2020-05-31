@@ -52,12 +52,54 @@ h1, h2, h3 {
 	background: linear-gradient(to bottom,#363b4e,#858daa);
 }
 
+.button-link {
+	margin: 0 auto 2em auto;
+}
+
 .post-content p {
 	padding: 0;
 	margin: 10px 0;
 	font-size: 1em;
 	text-align: justify;
 	font-style: normal;
+}
+
+.button-link a {
+	position: relative;
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: gray;
+	padding: 0em 0;
+	border: 2px solid gray;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.button-link a:hover {
+	color: white;
+	background-color: gray;
+}
+
+.button-link a:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	content: "";
+	margin: auto;
+	width: 8px;
+	height: 8px;
+	border: 2px solid gray;
+	border-top-style: none;
+	border-left-style: none;
+	transform: translate(0,0) rotate(-45deg);
+}
+
+.button-link a:hover:after {
+	border-color: white;
 }
 
 .img-full {
