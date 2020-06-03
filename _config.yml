@@ -47,7 +47,7 @@ sass:
   sass_dir: _sass
 
 kramdown:
-  toc_levels: 2..2
+  toc_levels: 2..3
 
 # Exclude from processing.
 # The following items will not be processed, by default.
