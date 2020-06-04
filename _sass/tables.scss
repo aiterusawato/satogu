@@ -1,0 +1,29 @@
+table {
+	display: table;
+	width: 100%;
+}
+
+.prop-table {
+	table-layout: fixed;
+	text-align: center;
+	font-size: .8em;
+}
+
+.prop-table th {
+	padding: 0;
+}
+
+.prop-table td {
+	padding: .5em 0;
+	line-height: 1em;
+	background-color: white;
+}
+
+.prop-table img {
+	height: 50px;
+	width: auto;
+}
+
+.dc-icon {
+	border-radius: 12px;
+}
