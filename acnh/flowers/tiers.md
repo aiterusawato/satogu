@@ -8,7 +8,7 @@ Flowers from each species can be ranked in tiers according to their selling pric
 | Tier          |                     Base *                      |                   Tier 1 *                   |          Tier 2           |              Tier 3              |
 | ------------- | :---------------------------------------------: | :------------------------------------------: | :-----------------------: | :------------------------------: |
 | Selling Price |                   40![Coin][]                   |                 80![Coin][]                  |       240![Coin][]        |          1000![Coin][]           |
-| Source        |              ![SR][]![NM][]![BP][]              |                ![NM][]![BP][]                |          ![BP][]          |             ![BP][]              |
+| Source        |              ![SR][]![NM][]![BP][]              |                   ![BP][]                    |          ![BP][]          |             ![BP][]              |
 | Generation ** |                        0                        |                      1                       | 1 (Roses)<br />2 (Others) | 2 (Gold Rose)<br />3 (Blue Rose) |
 | Rose          | ![WR][]![YR][]![RR][]<br />`0010` `0200` `2001` |      ![PR][]![OR][]<br />`2022` `2211`       |      ![LR][]![BR][]       |          ![UR][]![RG][]          |
 | Tulip         |  ![WT][]![YT][]![RT][]<br />`001` `020` `201`   | ![PT][]![OT][]![BT][]<br />`101` `120` `210` |          ![LT][]          |                                  |
